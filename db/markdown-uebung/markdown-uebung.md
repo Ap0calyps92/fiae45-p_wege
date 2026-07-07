@@ -45,4 +45,4 @@ git log
 
 ---
 
-Auf geht's und "Happy coding! 👍"
+Auf geht's und "Happy coding! 👿"
