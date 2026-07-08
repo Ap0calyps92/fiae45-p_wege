@@ -15,14 +15,15 @@ Das Repo ist grob nach Themenbereichen sortiert:
 
 ## 🗂 Aktuelle Struktur
 
-```explorer
+> Stand: aktuell nur Datenbanken-Ordner vorhanden, weitere Themenordner werden im Verlauf der Umschulung ergänzt.
+
+```text
 ├── db/
 │   ├── markdown-uebung/
 │   └── notizen/
+├── .gitignore
 └── README.md
 ```
-
-*(Struktur bei Bedarf anpassen, falls die tatsächliche Ordnerstruktur abweicht.)*
 
 ## 🎯 Zweck
 
@@ -35,7 +36,7 @@ Dieses Repository dient in erster Linie:
 ## 🛠 Verwendete Tools
 
 - ERDPlus, draw.io (Diagramme)
-- Visual Studio / VS Code
+- Visual Studio Code
 - Git & GitLab
 - Python, C#
 
