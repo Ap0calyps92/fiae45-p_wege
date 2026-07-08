@@ -20,6 +20,7 @@ Das Repo ist grob nach Themenbereichen sortiert:
 ```text
 ├── db/
 │   ├── markdown-uebung/
+│   ├── modelle/
 │   └── notizen/
 ├── .gitignore
 └── README.md
