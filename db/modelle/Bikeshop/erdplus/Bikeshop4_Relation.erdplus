@@ -23,39 +23,45 @@
             {
               "id": "becfef9e-7099-4a5f-8596-e1560b76e0c8",
               "name": "Firma",
-              "type": "INT",
+              "type": "VARCHAR(n)",
               "isPrimaryKey": false,
-              "isOptional": true
+              "isOptional": true,
+              "size": "100"
             },
             {
               "id": "e00477dd-33de-44d0-a9ee-dab73fc7e1b8",
               "name": "Vorname",
-              "type": "INT",
-              "isPrimaryKey": false
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
             },
             {
               "id": "782affb3-93ba-48cc-aa05-6261fee868e9",
               "name": "Nachname",
-              "type": "INT",
-              "isPrimaryKey": false
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
             },
             {
               "id": "957ad8fb-a6d4-4bac-af4d-4b07ed7aa392",
               "name": "Straße",
-              "type": "INT",
-              "isPrimaryKey": false
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
             },
             {
               "id": "b93fa646-09fe-4235-89d7-7354bc57fe2c",
               "name": "PLZ",
-              "type": "INT",
-              "isPrimaryKey": false
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "5"
             },
             {
               "id": "678e8cd1-608b-467d-bd01-7b1ac9bf8b72",
               "name": "Ort",
-              "type": "INT",
-              "isPrimaryKey": false
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
             }
           ],
           "numberOfGroups": 0,
@@ -89,14 +95,16 @@
             {
               "id": "0d5181cd-6e05-45e6-91fb-e1b1c4cbffd0",
               "name": "Vorname",
-              "type": "INT",
-              "isPrimaryKey": false
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
             },
             {
               "id": "e3bb7d43-7f2f-461d-80b7-80d5f3d27bfb",
               "name": "Nachname",
-              "type": "INT",
-              "isPrimaryKey": false
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
             }
           ],
           "numberOfGroups": 0,
@@ -130,13 +138,13 @@
             {
               "id": "3e6afad5-3346-414b-9413-e0adfa7b1783",
               "name": "Bestelldatum",
-              "type": "INT",
+              "type": "DATE",
               "isPrimaryKey": false
             },
             {
               "id": "5e3c17fa-512a-4fd6-a5e0-ba6b6e167a13",
               "name": "Lieferdatum",
-              "type": "INT",
+              "type": "DATE",
               "isPrimaryKey": false,
               "isOptional": true
             },
@@ -214,14 +222,16 @@
             {
               "id": "a482b46f-d74c-45bd-b738-8ec1813d9a83",
               "name": "Verkaufspreis",
-              "type": "INT",
-              "isPrimaryKey": false
+              "type": "NUMERIC(p s)",
+              "isPrimaryKey": false,
+              "size": "9,2"
             },
             {
               "id": "6bef8982-3c69-459e-9e5f-d65a5204b8da",
               "name": "Einkaufspreis",
-              "type": "INT",
-              "isPrimaryKey": false
+              "type": "NUMERIC(p s)",
+              "isPrimaryKey": false,
+              "size": "9,2"
             },
             {
               "id": "8e0788c6-7848-4811-ba8a-5d50e941034d",
@@ -243,13 +253,13 @@
             }
           ],
           "numberOfGroups": 0,
-          "isSelected": false
+          "isSelected": true
         },
         "measured": {
           "width": 240,
           "height": 152
         },
-        "selected": false,
+        "selected": true,
         "dragging": false
       },
       {
@@ -273,8 +283,9 @@
             {
               "id": "570c26e2-c414-4162-9614-465be40692df",
               "name": "Kategorie",
-              "type": "INT",
-              "isPrimaryKey": false
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
             }
           ],
           "numberOfGroups": 0,
@@ -307,8 +318,9 @@
             {
               "id": "f29ee04d-2b36-41bb-9e1e-84a612528635",
               "name": "Einzelpreis",
-              "type": "INT",
-              "isPrimaryKey": false
+              "type": "NUMERIC(p s)",
+              "isPrimaryKey": false,
+              "size": "9,2"
             },
             {
               "id": "ad672772-7de2-4479-b742-d580b7d041c0",
@@ -496,9 +508,9 @@
       }
     ],
     "viewport": {
-      "x": 95.84129648521684,
-      "y": 116.46897330924844,
-      "zoom": 0.9999999999999999
+      "x": -285.312001368015,
+      "y": -19.721487048271854,
+      "zoom": 1.326845140597161
     }
   },
   "name": "Bikeshop4_Relation",
@@ -515,5 +527,5 @@
     "id": 354869
   },
   "id": 505527,
-  "updatedAtTimestamp": 1783514487
+  "updatedAtTimestamp": 1783592207
 }
