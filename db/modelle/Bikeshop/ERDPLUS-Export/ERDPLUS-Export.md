@@ -1,7 +1,6 @@
 # ERDPLUS-Export
 
 Nachfolgender SQL-Code wurde von ERDPlus generiert und darf so nicht ausgeführt werden, weil die Angabe fehlt, in welche Datenbank geschrieben wird:
-
 ```sql
 CREATE TABLE KUNDE
 (
