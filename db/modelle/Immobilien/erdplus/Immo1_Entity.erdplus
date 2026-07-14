@@ -1,0 +1,334 @@
+{
+  "diagramType": 1,
+  "data": {
+    "nodes": [
+      {
+        "id": "7ce97664-d89b-437b-b127-e78509dfff1d",
+        "type": "Entity",
+        "position": {
+          "x": 175,
+          "y": -145
+        },
+        "data": {
+          "label": "Immobilie",
+          "type": "Regular",
+          "isConnectable": false,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false
+      },
+      {
+        "id": "ad4fce19-1a01-4405-a6dc-844c3467de9f",
+        "type": "Entity",
+        "position": {
+          "x": 434.90892670553524,
+          "y": -145.97371474153064
+        },
+        "data": {
+          "label": "Eigentümer",
+          "type": "Regular",
+          "isConnectable": false,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "566b3b5e-0950-4c06-bb7a-a4602aef6ad3",
+        "type": "Entity",
+        "position": {
+          "x": 173.4394924937988,
+          "y": 11.32273602056879
+        },
+        "data": {
+          "label": "Besichtigung",
+          "type": "Regular",
+          "isConnectable": false,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "3ca8e069-cb41-4e59-873f-258e7084bdcb",
+        "type": "Entity",
+        "position": {
+          "x": 175.62714576255257,
+          "y": 165.91808984482776
+        },
+        "data": {
+          "label": "Makler",
+          "type": "Regular",
+          "isConnectable": false,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "84d4aee9-42af-4701-8d4b-c00c62e0a945",
+        "type": "Entity",
+        "position": {
+          "x": 431.00174037932754,
+          "y": 166.24527780495663
+        },
+        "data": {
+          "label": "Kunde",
+          "type": "Regular",
+          "isConnectable": false,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "8b57beba-0812-470b-94cb-f08a876aa4a3",
+        "type": "Relationship",
+        "position": {
+          "x": 304.9544633527676,
+          "y": -145.48685737076534
+        },
+        "data": {
+          "label": "gehört",
+          "sourceEntityDetails": {
+            "id": "7ce97664-d89b-437b-b127-e78509dfff1d",
+            "maxCardinality": "Many"
+          },
+          "targetEntityDetails": {
+            "id": "ad4fce19-1a01-4405-a6dc-844c3467de9f",
+            "maxCardinality": "One"
+          },
+          "isSelected": false,
+          "isConnectable": true
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false
+      },
+      {
+        "id": "cb9cf81f-38dd-4dbe-b88b-543c604582b1",
+        "type": "Relationship",
+        "position": {
+          "x": 173.08924506473062,
+          "y": -67.59229944449478
+        },
+        "data": {
+          "label": "betrifft",
+          "sourceEntityDetails": {
+            "id": "7ce97664-d89b-437b-b127-e78509dfff1d",
+            "maxCardinality": "One"
+          },
+          "targetEntityDetails": {
+            "id": "566b3b5e-0950-4c06-bb7a-a4602aef6ad3",
+            "maxCardinality": "Many"
+          },
+          "isSelected": false,
+          "isConnectable": true
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "e0c1946c-9f82-46b4-a154-9028ec98fefe",
+        "type": "Relationship",
+        "position": {
+          "x": 171.89548303644852,
+          "y": 90.12774784225665
+        },
+        "data": {
+          "label": "begleitet",
+          "sourceEntityDetails": {
+            "id": "566b3b5e-0950-4c06-bb7a-a4602aef6ad3",
+            "maxCardinality": "Many"
+          },
+          "targetEntityDetails": {
+            "id": "3ca8e069-cb41-4e59-873f-258e7084bdcb",
+            "maxCardinality": "One"
+          },
+          "isSelected": false,
+          "isConnectable": true
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "0ce68ca1-e1a4-45fa-9bbf-5aeda6bedf09",
+        "type": "Relationship",
+        "position": {
+          "x": 430.82701655036306,
+          "y": 11.819681640804625
+        },
+        "data": {
+          "label": "besichtigt",
+          "sourceEntityDetails": {
+            "id": "566b3b5e-0950-4c06-bb7a-a4602aef6ad3",
+            "maxCardinality": "Many"
+          },
+          "targetEntityDetails": {
+            "id": "84d4aee9-42af-4701-8d4b-c00c62e0a945",
+            "maxCardinality": "One"
+          },
+          "isSelected": false,
+          "isConnectable": true
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "a283aae2-8854-4979-a741-3860216b36d7",
+        "type": "Label",
+        "position": {
+          "x": 317,
+          "y": -53
+        },
+        "data": {
+          "label": "p_wege",
+          "isSelected": false,
+          "isConnectable": true
+        },
+        "measured": {
+          "width": 78,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "8b57beba-0812-470b-94cb-f08a876aa4a3->7ce97664-d89b-437b-b127-e78509dfff1d;7ce97664-d89b-437b-b127-e78509dfff1d->ad4fce19-1a01-4405-a6dc-844c3467de9f",
+        "type": "Relationship",
+        "source": "8b57beba-0812-470b-94cb-f08a876aa4a3",
+        "target": "7ce97664-d89b-437b-b127-e78509dfff1d",
+        "data": {
+          "id": "8b57beba-0812-470b-94cb-f08a876aa4a3->7ce97664-d89b-437b-b127-e78509dfff1d",
+          "maxCardinality": "Many"
+        }
+      },
+      {
+        "id": "8b57beba-0812-470b-94cb-f08a876aa4a3->ad4fce19-1a01-4405-a6dc-844c3467de9f;7ce97664-d89b-437b-b127-e78509dfff1d->ad4fce19-1a01-4405-a6dc-844c3467de9f",
+        "type": "Relationship",
+        "source": "8b57beba-0812-470b-94cb-f08a876aa4a3",
+        "target": "ad4fce19-1a01-4405-a6dc-844c3467de9f",
+        "data": {
+          "id": "8b57beba-0812-470b-94cb-f08a876aa4a3->ad4fce19-1a01-4405-a6dc-844c3467de9f",
+          "maxCardinality": "One"
+        }
+      },
+      {
+        "id": "cb9cf81f-38dd-4dbe-b88b-543c604582b1->7ce97664-d89b-437b-b127-e78509dfff1d;7ce97664-d89b-437b-b127-e78509dfff1d->566b3b5e-0950-4c06-bb7a-a4602aef6ad3",
+        "type": "Relationship",
+        "source": "cb9cf81f-38dd-4dbe-b88b-543c604582b1",
+        "target": "7ce97664-d89b-437b-b127-e78509dfff1d",
+        "data": {
+          "id": "cb9cf81f-38dd-4dbe-b88b-543c604582b1->7ce97664-d89b-437b-b127-e78509dfff1d",
+          "maxCardinality": "One"
+        }
+      },
+      {
+        "id": "cb9cf81f-38dd-4dbe-b88b-543c604582b1->566b3b5e-0950-4c06-bb7a-a4602aef6ad3;7ce97664-d89b-437b-b127-e78509dfff1d->566b3b5e-0950-4c06-bb7a-a4602aef6ad3",
+        "type": "Relationship",
+        "source": "cb9cf81f-38dd-4dbe-b88b-543c604582b1",
+        "target": "566b3b5e-0950-4c06-bb7a-a4602aef6ad3",
+        "data": {
+          "id": "cb9cf81f-38dd-4dbe-b88b-543c604582b1->566b3b5e-0950-4c06-bb7a-a4602aef6ad3",
+          "maxCardinality": "Many"
+        }
+      },
+      {
+        "id": "e0c1946c-9f82-46b4-a154-9028ec98fefe->566b3b5e-0950-4c06-bb7a-a4602aef6ad3;566b3b5e-0950-4c06-bb7a-a4602aef6ad3->3ca8e069-cb41-4e59-873f-258e7084bdcb",
+        "type": "Relationship",
+        "source": "e0c1946c-9f82-46b4-a154-9028ec98fefe",
+        "target": "566b3b5e-0950-4c06-bb7a-a4602aef6ad3",
+        "data": {
+          "id": "e0c1946c-9f82-46b4-a154-9028ec98fefe->566b3b5e-0950-4c06-bb7a-a4602aef6ad3",
+          "maxCardinality": "Many"
+        }
+      },
+      {
+        "id": "e0c1946c-9f82-46b4-a154-9028ec98fefe->3ca8e069-cb41-4e59-873f-258e7084bdcb;566b3b5e-0950-4c06-bb7a-a4602aef6ad3->3ca8e069-cb41-4e59-873f-258e7084bdcb",
+        "type": "Relationship",
+        "source": "e0c1946c-9f82-46b4-a154-9028ec98fefe",
+        "target": "3ca8e069-cb41-4e59-873f-258e7084bdcb",
+        "data": {
+          "id": "e0c1946c-9f82-46b4-a154-9028ec98fefe->3ca8e069-cb41-4e59-873f-258e7084bdcb",
+          "maxCardinality": "One"
+        }
+      },
+      {
+        "id": "0ce68ca1-e1a4-45fa-9bbf-5aeda6bedf09->566b3b5e-0950-4c06-bb7a-a4602aef6ad3;566b3b5e-0950-4c06-bb7a-a4602aef6ad3->84d4aee9-42af-4701-8d4b-c00c62e0a945",
+        "type": "Relationship",
+        "source": "0ce68ca1-e1a4-45fa-9bbf-5aeda6bedf09",
+        "target": "566b3b5e-0950-4c06-bb7a-a4602aef6ad3",
+        "data": {
+          "id": "0ce68ca1-e1a4-45fa-9bbf-5aeda6bedf09->566b3b5e-0950-4c06-bb7a-a4602aef6ad3",
+          "maxCardinality": "Many"
+        }
+      },
+      {
+        "id": "0ce68ca1-e1a4-45fa-9bbf-5aeda6bedf09->84d4aee9-42af-4701-8d4b-c00c62e0a945;566b3b5e-0950-4c06-bb7a-a4602aef6ad3->84d4aee9-42af-4701-8d4b-c00c62e0a945",
+        "type": "Relationship",
+        "source": "0ce68ca1-e1a4-45fa-9bbf-5aeda6bedf09",
+        "target": "84d4aee9-42af-4701-8d4b-c00c62e0a945",
+        "data": {
+          "id": "0ce68ca1-e1a4-45fa-9bbf-5aeda6bedf09->84d4aee9-42af-4701-8d4b-c00c62e0a945",
+          "maxCardinality": "One"
+        }
+      }
+    ],
+    "viewport": {
+      "x": 432.915630903221,
+      "y": 338.98221123176234,
+      "zoom": 1.5283765207651663
+    }
+  },
+  "name": "Immo1_Entity",
+  "folder": {
+    "name": "Immobilien",
+    "folderType": 2,
+    "parentFolder": {
+      "depth": 0,
+      "id": 354527,
+      "name": "Diagrams",
+      "folderType": 1
+    },
+    "depth": 1,
+    "id": 357876
+  },
+  "id": 509687,
+  "updatedAtTimestamp": 1784032334
+}

@@ -1,0 +1,463 @@
+{
+  "diagramType": 2,
+  "data": {
+    "nodes": [
+      {
+        "id": "7ce97664-d89b-437b-b127-e78509dfff1d",
+        "type": "Table",
+        "position": {
+          "x": -218.26752310327242,
+          "y": -243.9679859465189
+        },
+        "data": {
+          "label": "IMMOBILIE",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "fa5ca719-00fb-4b8a-9fd0-8703568bd25d",
+              "name": "Immobilie_ID",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "0aebb4a3-9e73-4545-8d0b-237533d71863",
+              "name": "Name",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "77c9e4d1-a74d-4392-95b4-8e2918bb2443",
+              "name": "Strasse",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "d22e20f5-b6ff-4c8c-8411-ec9047c85681",
+              "name": "PLZ",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "5"
+            },
+            {
+              "id": "45a5dd84-fdfb-4872-8520-27c3e79b34ba",
+              "name": "Ort",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "41033203-68e4-4cb1-bbc8-d03efe4b2b88",
+              "name": "fk_EIGENTüMER",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "d8430952-602e-4982-bb76-3bab90d216b4",
+                "sourceTableId": "ad4fce19-1a01-4405-a6dc-844c3467de9f",
+                "columns": [
+                  {
+                    "id": "fk_f2bcfb81-b0b6-4f05-bac0-808770c34a90",
+                    "name": "Eigentuemer_ID",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 177
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "ad4fce19-1a01-4405-a6dc-844c3467de9f",
+        "type": "Table",
+        "position": {
+          "x": 90.25725634792119,
+          "y": -119.06136768589832
+        },
+        "data": {
+          "label": "EIGENTUEMER",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "f2bcfb81-b0b6-4f05-bac0-808770c34a90",
+              "name": "Eigentuemer_ID",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "9228d290-4d94-4352-869c-84511ba9a6b6",
+              "name": "Name",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "d112cf3b-d3b5-4e53-b7ce-64c1cc81293a",
+              "name": "Strasse",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "0151f58b-ebdb-43aa-9abd-fb5264e11418",
+              "name": "PLZ",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "5"
+            },
+            {
+              "id": "46723605-1fb2-4393-a12b-c738f185232f",
+              "name": "Ort",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 151
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "566b3b5e-0950-4c06-bb7a-a4602aef6ad3",
+        "type": "Table",
+        "position": {
+          "x": 92.70245132690178,
+          "y": -294.2626240949983
+        },
+        "data": {
+          "label": "BESICHTIGUNG",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "1018ee85-5d5e-49b9-9582-6cde68dc7d17",
+              "name": "Besichtigung_ID",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "cd16a072-f9e9-4d09-b72e-33b8072eb432",
+              "name": "Besuchstermin",
+              "type": "DATE",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "d0a8bce3-04cc-44f4-a40d-aad7e6cc2d1b",
+              "name": "fk_IMMOBILIE",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "ebef28c5-42d6-4e34-87a3-6534f751b67d",
+                "sourceTableId": "7ce97664-d89b-437b-b127-e78509dfff1d",
+                "columns": [
+                  {
+                    "id": "fk_fa5ca719-00fb-4b8a-9fd0-8703568bd25d",
+                    "name": "Immobilie_ID",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isOptional": false,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "735605ab-9e43-4a8f-8679-a5eff9d1e32f",
+              "name": "fk_MAKLER",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "e8232bd1-5022-4757-b699-61f7868f6421",
+                "sourceTableId": "3ca8e069-cb41-4e59-873f-258e7084bdcb",
+                "columns": [
+                  {
+                    "id": "fk_aed25f86-5bee-4250-a4e6-0d29cc6dedce",
+                    "name": "Makler_ID",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isOptional": false,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "5f1b4fb2-e913-4bd3-ac9c-7df121a0660c",
+              "name": "fk_KUNDE",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "54bf10c3-634a-43f2-b9ca-76cc9cb50727",
+                "sourceTableId": "84d4aee9-42af-4701-8d4b-c00c62e0a945",
+                "columns": [
+                  {
+                    "id": "fk_34a2b5f5-33a6-4454-a9c3-281c21b760c8",
+                    "name": "Kunde_ID",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isOptional": false,
+              "isPrimaryKey": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 152
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "3ca8e069-cb41-4e59-873f-258e7084bdcb",
+        "type": "Table",
+        "position": {
+          "x": -215.90409688551782,
+          "y": -52.85324751063507
+        },
+        "data": {
+          "label": "MAKLER",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "aed25f86-5bee-4250-a4e6-0d29cc6dedce",
+              "name": "Makler_ID",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "c61b7ba4-00c9-4ee3-a8c6-92407324a395",
+              "name": "Name",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "7c0e9091-c563-40c1-a872-56ae1025d489",
+              "name": "Telefon",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 101
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "84d4aee9-42af-4701-8d4b-c00c62e0a945",
+        "type": "Table",
+        "position": {
+          "x": 395.15224601427417,
+          "y": -195.33793128127797
+        },
+        "data": {
+          "label": "KUNDE",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "34a2b5f5-33a6-4454-a9c3-281c21b760c8",
+              "name": "Kunde_ID",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "953777a0-89a8-47c0-bfd4-4f4a7e449fd3",
+              "name": "Name",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "89f6d0e1-8a8a-40b6-9028-103087667670",
+              "name": "Strasse",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "c5752f7a-5db3-44cc-802f-9d98a2a5b203",
+              "name": "PLZ",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "5"
+            },
+            {
+              "id": "ac5141dd-07ec-4521-a886-7c5869bab11a",
+              "name": "Ort",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 151
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "71338f04-dbc0-473b-a7ad-fdd9780fa2ae",
+        "type": "Label",
+        "position": {
+          "x": -91.85899029983048,
+          "y": -333.14481325864404
+        },
+        "data": {
+          "label": "p_wege",
+          "isSelected": false
+        },
+        "measured": {
+          "width": 78,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "ad4fce19-1a01-4405-a6dc-844c3467de9f->7ce97664-d89b-437b-b127-e78509dfff1d_d8430952-602e-4982-bb76-3bab90d216b4",
+        "type": "Relational",
+        "source": "ad4fce19-1a01-4405-a6dc-844c3467de9f",
+        "targetHandle": "foreign-key-handle-d8430952-602e-4982-bb76-3bab90d216b4",
+        "target": "7ce97664-d89b-437b-b127-e78509dfff1d",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "d8430952-602e-4982-bb76-3bab90d216b4",
+            "sourceTableId": "ad4fce19-1a01-4405-a6dc-844c3467de9f",
+            "columns": [
+              {
+                "id": "fk_f2bcfb81-b0b6-4f05-bac0-808770c34a90",
+                "name": "Eigentuemer_ID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "7ce97664-d89b-437b-b127-e78509dfff1d->566b3b5e-0950-4c06-bb7a-a4602aef6ad3_ebef28c5-42d6-4e34-87a3-6534f751b67d",
+        "type": "Relational",
+        "source": "7ce97664-d89b-437b-b127-e78509dfff1d",
+        "targetHandle": "foreign-key-handle-ebef28c5-42d6-4e34-87a3-6534f751b67d",
+        "target": "566b3b5e-0950-4c06-bb7a-a4602aef6ad3",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "ebef28c5-42d6-4e34-87a3-6534f751b67d",
+            "sourceTableId": "7ce97664-d89b-437b-b127-e78509dfff1d",
+            "columns": [
+              {
+                "id": "fk_fa5ca719-00fb-4b8a-9fd0-8703568bd25d",
+                "name": "Immobilie_ID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "3ca8e069-cb41-4e59-873f-258e7084bdcb->566b3b5e-0950-4c06-bb7a-a4602aef6ad3_e8232bd1-5022-4757-b699-61f7868f6421",
+        "type": "Relational",
+        "source": "3ca8e069-cb41-4e59-873f-258e7084bdcb",
+        "targetHandle": "foreign-key-handle-e8232bd1-5022-4757-b699-61f7868f6421",
+        "target": "566b3b5e-0950-4c06-bb7a-a4602aef6ad3",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "e8232bd1-5022-4757-b699-61f7868f6421",
+            "sourceTableId": "3ca8e069-cb41-4e59-873f-258e7084bdcb",
+            "columns": [
+              {
+                "id": "fk_aed25f86-5bee-4250-a4e6-0d29cc6dedce",
+                "name": "Makler_ID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "84d4aee9-42af-4701-8d4b-c00c62e0a945->566b3b5e-0950-4c06-bb7a-a4602aef6ad3_54bf10c3-634a-43f2-b9ca-76cc9cb50727",
+        "type": "Relational",
+        "source": "84d4aee9-42af-4701-8d4b-c00c62e0a945",
+        "targetHandle": "foreign-key-handle-54bf10c3-634a-43f2-b9ca-76cc9cb50727",
+        "target": "566b3b5e-0950-4c06-bb7a-a4602aef6ad3",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "54bf10c3-634a-43f2-b9ca-76cc9cb50727",
+            "sourceTableId": "84d4aee9-42af-4701-8d4b-c00c62e0a945",
+            "columns": [
+              {
+                "id": "fk_34a2b5f5-33a6-4454-a9c3-281c21b760c8",
+                "name": "Kunde_ID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "viewport": {
+      "x": 735.5576385444991,
+      "y": 553.9990303846396,
+      "zoom": 1
+    }
+  },
+  "name": "Immo4_rs",
+  "folder": {
+    "name": "Immobilien",
+    "folderType": 2,
+    "parentFolder": {
+      "depth": 0,
+      "id": 354527,
+      "name": "Diagrams",
+      "folderType": 1
+    },
+    "depth": 1,
+    "id": 357876
+  },
+  "id": 509729,
+  "updatedAtTimestamp": 1784032481
+}
