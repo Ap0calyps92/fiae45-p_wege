@@ -1,0 +1,90 @@
+# ERDPlus-Export
+
+Folgend ist der SQL Code der von ERDPlus Generiert wurde und sollte nicht ausgeführt werden!
+
+```sql
+CREATE TABLE TRAININGSART
+(
+  Trainingsart_ID INT NOT NULL,
+  Name VARCHAR(100) NOT NULL,
+  PRIMARY KEY (Trainingsart_ID)
+);
+
+CREATE TABLE KURSART
+(
+  Kursart_ID INT NOT NULL,
+  Beschreibung VARCHAR(100) NOT NULL,
+  Trainingsstunden INT NOT NULL,
+  max_Teilnehmer INT NOT NULL,
+  Preis NUMERIC(9,2) NOT NULL,
+  Kürzel CHAR(2) NOT NULL,
+  Trainingsart_ID INT NOT NULL,
+  PRIMARY KEY (Kursart_ID),
+  FOREIGN KEY (Trainingsart_ID) REFERENCES TRAININGSART(Trainingsart_ID)
+);
+
+CREATE TABLE KURSLEITER
+(
+  Kursleiter_ID INT NOT NULL,
+  Name VARCHAR(100) NOT NULL,
+  PRIMARY KEY (Kursleiter_ID)
+);
+
+CREATE TABLE KURS
+(
+  Kurs_ID INT NOT NULL,
+  Startdatum DATE NOT NULL,
+  Zeit_von TIME NOT NULL,
+  Zeit_bis TIME NOT NULL,
+  Status BIT NOT NULL,
+  Kursart_ID INT NOT NULL,
+  Kursleiter_ID INT NOT NULL,
+  PRIMARY KEY (Kurs_ID),
+  FOREIGN KEY (Kursart_ID) REFERENCES KURSART(Kursart_ID),
+  FOREIGN KEY (Kursleiter_ID) REFERENCES KURSLEITER(Kursleiter_ID)
+);
+
+CREATE TABLE KUNDE
+(
+  Kunde_ID INT NOT NULL,
+  Name VARCHAR(100) NOT NULL,
+  Passwort VARCHAR(255) NOT NULL,
+  PRIMARY KEY (Kunde_ID)
+);
+
+CREATE TABLE TRAININGSSTAND
+(
+  Datum DATE NOT NULL,
+  Körpergewicht NUMERIC(5,2) NOT NULL,
+  Fitnessgrad NUMERIC(5,2) NOT NULL,
+  Kunde_ID INT NOT NULL,
+  PRIMARY KEY (Datum, Kunde_ID),
+  FOREIGN KEY (Kunde_ID) REFERENCES KUNDE(Kunde_ID)
+);
+
+CREATE TABLE TRAININGSTAG
+(
+  Name VARCHAR(100) NOT NULL,
+  Kürzel CHAR(2) NOT NULL,
+  PRIMARY KEY (Kürzel)
+);
+
+CREATE TABLE BUCHT
+(
+  Buchungsdatum DATE,
+  Kunde_ID INT NOT NULL,
+  Kurs_ID INT NOT NULL,
+  PRIMARY KEY (Kunde_ID, Kurs_ID),
+  FOREIGN KEY (Kunde_ID) REFERENCES KUNDE(Kunde_ID),
+  FOREIGN KEY (Kurs_ID) REFERENCES KURS(Kurs_ID)
+);
+
+CREATE TABLE KURSART_TRAININGSTAG
+(
+  Kürzel CHAR(2) NOT NULL,
+  Kursart_ID INT NOT NULL,
+  PRIMARY KEY (Kürzel, Kursart_ID),
+  FOREIGN KEY (Kürzel) REFERENCES TRAININGSTAG(Kürzel),
+  FOREIGN KEY (Kursart_ID) REFERENCES KURSART(Kursart_ID)
+);
+```
