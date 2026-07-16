@@ -1,0 +1,498 @@
+{
+  "diagramType": 1,
+  "data": {
+    "nodes": [
+      {
+        "id": "bac331fc-bc2a-48fc-aac2-dbdd908353b5",
+        "type": "Entity",
+        "position": {
+          "x": 864.3404774574944,
+          "y": -126.9580037708116
+        },
+        "data": {
+          "label": "Kunde",
+          "type": "Regular",
+          "isConnectable": false,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "60c81ea1-0433-46ea-a267-d2b52879202b",
+        "type": "Entity",
+        "position": {
+          "x": 866.2801489019777,
+          "y": 195.8003888851092
+        },
+        "data": {
+          "label": "Passagier",
+          "type": "Regular",
+          "isConnectable": false,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "2e5ad269-9be5-4fe5-a80e-c5c54353b2e8",
+        "type": "Entity",
+        "position": {
+          "x": 864.3557321182706,
+          "y": 76.43093143421042
+        },
+        "data": {
+          "label": "Buchung",
+          "type": "Regular",
+          "isConnectable": false,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+        "type": "Entity",
+        "position": {
+          "x": 1301.8794728790613,
+          "y": 77.0823871830989
+        },
+        "data": {
+          "label": "Flug",
+          "type": "Regular",
+          "isConnectable": false,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "3698bbac-f1c6-463b-a9b1-c2ed2947e0d8",
+        "type": "Entity",
+        "position": {
+          "x": 1301.7986242204986,
+          "y": 454.5679551381463
+        },
+        "data": {
+          "label": "Flughafen",
+          "type": "Regular",
+          "isConnectable": false,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "9422ff4c-e41b-480c-8b47-a39a6fe0aca3",
+        "type": "Entity",
+        "position": {
+          "x": 1638.094141742439,
+          "y": 75.45335863226543
+        },
+        "data": {
+          "label": "Verkehrstag",
+          "type": "Regular",
+          "isConnectable": false,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "ccb720d2-8e09-4b0d-8d6b-558f9818efa2",
+        "type": "Entity",
+        "position": {
+          "x": 1301.1338159012357,
+          "y": 297.66338466019613
+        },
+        "data": {
+          "label": "Flugverbindung",
+          "type": "Regular",
+          "isConnectable": false,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "ef60aa49-ae88-49a6-9f25-df58414965ec",
+        "type": "Relationship",
+        "position": {
+          "x": 865.1017722426616,
+          "y": -18.85736280267748
+        },
+        "data": {
+          "label": "tätigt",
+          "sourceEntityDetails": {
+            "id": "2e5ad269-9be5-4fe5-a80e-c5c54353b2e8",
+            "maxCardinality": "Many"
+          },
+          "targetEntityDetails": {
+            "id": "bac331fc-bc2a-48fc-aac2-dbdd908353b5",
+            "maxCardinality": "One"
+          },
+          "isSelected": false,
+          "isConnectable": true
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "ac582a6d-836a-4722-968f-19e096028bbd",
+        "type": "Relationship",
+        "position": {
+          "x": 1071.8125906769783,
+          "y": 77.51032676343385
+        },
+        "data": {
+          "label": "beinhaltet",
+          "sourceEntityDetails": {
+            "id": "2e5ad269-9be5-4fe5-a80e-c5c54353b2e8",
+            "maxCardinality": "Many"
+          },
+          "targetEntityDetails": {
+            "id": "e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+            "maxCardinality": "Many"
+          },
+          "isSelected": false,
+          "isConnectable": true
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "45082783-a114-4261-91cc-60e66f86f8c7",
+        "type": "Relationship",
+        "position": {
+          "x": 1301.5066443901485,
+          "y": 187.37288592164748
+        },
+        "data": {
+          "label": "ist Vorlage für",
+          "sourceEntityDetails": {
+            "id": "e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+            "maxCardinality": "Many"
+          },
+          "targetEntityDetails": {
+            "id": "ccb720d2-8e09-4b0d-8d6b-558f9818efa2",
+            "maxCardinality": "One"
+          },
+          "isSelected": false,
+          "isConnectable": true
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "b9942fb6-74a5-4109-835e-2415764abc68",
+        "type": "Relationship",
+        "position": {
+          "x": 1196.0128711494203,
+          "y": 375.43968689332866
+        },
+        "data": {
+          "label": "startet in",
+          "sourceEntityDetails": {
+            "id": "ccb720d2-8e09-4b0d-8d6b-558f9818efa2",
+            "maxCardinality": "Many"
+          },
+          "targetEntityDetails": {
+            "id": "3698bbac-f1c6-463b-a9b1-c2ed2947e0d8",
+            "maxCardinality": "One"
+          },
+          "isSelected": false,
+          "isConnectable": true
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "452f60bc-6008-4813-95eb-666d0753c25f",
+        "type": "Relationship",
+        "position": {
+          "x": 1409.6235009956845,
+          "y": 376.8143953373669
+        },
+        "data": {
+          "label": "landet in",
+          "sourceEntityDetails": {
+            "id": "ccb720d2-8e09-4b0d-8d6b-558f9818efa2",
+            "maxCardinality": "Many"
+          },
+          "targetEntityDetails": {
+            "id": "3698bbac-f1c6-463b-a9b1-c2ed2947e0d8",
+            "maxCardinality": "One"
+          },
+          "isSelected": false,
+          "isConnectable": true
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "4175ba5a-264d-48e1-87ae-b9eca3c817f2",
+        "type": "Relationship",
+        "position": {
+          "x": 1472.279372091898,
+          "y": 75.88577877749088
+        },
+        "data": {
+          "label": "fliegt an",
+          "sourceEntityDetails": {
+            "id": "e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+            "maxCardinality": "Many"
+          },
+          "targetEntityDetails": {
+            "id": "9422ff4c-e41b-480c-8b47-a39a6fe0aca3",
+            "maxCardinality": "One"
+          },
+          "isSelected": false,
+          "isConnectable": true
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "c9ce29cf-05b9-4488-a13a-bdc84684aac4",
+        "type": "Relationship",
+        "position": {
+          "x": 1075.5810358318429,
+          "y": 196.54439507529324
+        },
+        "data": {
+          "label": "fliegt auf",
+          "sourceEntityDetails": {
+            "id": "60c81ea1-0433-46ea-a267-d2b52879202b",
+            "maxCardinality": "Many"
+          },
+          "targetEntityDetails": {
+            "id": "e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+            "maxCardinality": "Many"
+          },
+          "isSelected": false,
+          "isConnectable": true
+        },
+        "measured": {
+          "width": 100,
+          "height": 50
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "ef60aa49-ae88-49a6-9f25-df58414965ec->2e5ad269-9be5-4fe5-a80e-c5c54353b2e8;2e5ad269-9be5-4fe5-a80e-c5c54353b2e8->bac331fc-bc2a-48fc-aac2-dbdd908353b5",
+        "type": "Relationship",
+        "source": "ef60aa49-ae88-49a6-9f25-df58414965ec",
+        "target": "2e5ad269-9be5-4fe5-a80e-c5c54353b2e8",
+        "data": {
+          "id": "ef60aa49-ae88-49a6-9f25-df58414965ec->2e5ad269-9be5-4fe5-a80e-c5c54353b2e8",
+          "maxCardinality": "Many"
+        }
+      },
+      {
+        "id": "ef60aa49-ae88-49a6-9f25-df58414965ec->bac331fc-bc2a-48fc-aac2-dbdd908353b5;2e5ad269-9be5-4fe5-a80e-c5c54353b2e8->bac331fc-bc2a-48fc-aac2-dbdd908353b5",
+        "type": "Relationship",
+        "source": "ef60aa49-ae88-49a6-9f25-df58414965ec",
+        "target": "bac331fc-bc2a-48fc-aac2-dbdd908353b5",
+        "data": {
+          "id": "ef60aa49-ae88-49a6-9f25-df58414965ec->bac331fc-bc2a-48fc-aac2-dbdd908353b5",
+          "maxCardinality": "One"
+        }
+      },
+      {
+        "id": "ac582a6d-836a-4722-968f-19e096028bbd->2e5ad269-9be5-4fe5-a80e-c5c54353b2e8;2e5ad269-9be5-4fe5-a80e-c5c54353b2e8->e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+        "type": "Relationship",
+        "source": "ac582a6d-836a-4722-968f-19e096028bbd",
+        "target": "2e5ad269-9be5-4fe5-a80e-c5c54353b2e8",
+        "data": {
+          "id": "ac582a6d-836a-4722-968f-19e096028bbd->2e5ad269-9be5-4fe5-a80e-c5c54353b2e8",
+          "maxCardinality": "Many"
+        }
+      },
+      {
+        "id": "ac582a6d-836a-4722-968f-19e096028bbd->e6a1d57f-bd5d-4bf9-8b44-3ba56068f260;2e5ad269-9be5-4fe5-a80e-c5c54353b2e8->e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+        "type": "Relationship",
+        "source": "ac582a6d-836a-4722-968f-19e096028bbd",
+        "target": "e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+        "data": {
+          "id": "ac582a6d-836a-4722-968f-19e096028bbd->e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+          "maxCardinality": "Many"
+        }
+      },
+      {
+        "id": "45082783-a114-4261-91cc-60e66f86f8c7->e6a1d57f-bd5d-4bf9-8b44-3ba56068f260;e6a1d57f-bd5d-4bf9-8b44-3ba56068f260->ccb720d2-8e09-4b0d-8d6b-558f9818efa2",
+        "type": "Relationship",
+        "source": "45082783-a114-4261-91cc-60e66f86f8c7",
+        "target": "e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+        "data": {
+          "id": "45082783-a114-4261-91cc-60e66f86f8c7->e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+          "maxCardinality": "Many"
+        }
+      },
+      {
+        "id": "45082783-a114-4261-91cc-60e66f86f8c7->ccb720d2-8e09-4b0d-8d6b-558f9818efa2;e6a1d57f-bd5d-4bf9-8b44-3ba56068f260->ccb720d2-8e09-4b0d-8d6b-558f9818efa2",
+        "type": "Relationship",
+        "source": "45082783-a114-4261-91cc-60e66f86f8c7",
+        "target": "ccb720d2-8e09-4b0d-8d6b-558f9818efa2",
+        "data": {
+          "id": "45082783-a114-4261-91cc-60e66f86f8c7->ccb720d2-8e09-4b0d-8d6b-558f9818efa2",
+          "maxCardinality": "One"
+        }
+      },
+      {
+        "id": "b9942fb6-74a5-4109-835e-2415764abc68->ccb720d2-8e09-4b0d-8d6b-558f9818efa2;ccb720d2-8e09-4b0d-8d6b-558f9818efa2->3698bbac-f1c6-463b-a9b1-c2ed2947e0d8",
+        "type": "Relationship",
+        "source": "b9942fb6-74a5-4109-835e-2415764abc68",
+        "target": "ccb720d2-8e09-4b0d-8d6b-558f9818efa2",
+        "data": {
+          "id": "b9942fb6-74a5-4109-835e-2415764abc68->ccb720d2-8e09-4b0d-8d6b-558f9818efa2",
+          "maxCardinality": "Many"
+        }
+      },
+      {
+        "id": "b9942fb6-74a5-4109-835e-2415764abc68->3698bbac-f1c6-463b-a9b1-c2ed2947e0d8;ccb720d2-8e09-4b0d-8d6b-558f9818efa2->3698bbac-f1c6-463b-a9b1-c2ed2947e0d8",
+        "type": "Relationship",
+        "source": "b9942fb6-74a5-4109-835e-2415764abc68",
+        "target": "3698bbac-f1c6-463b-a9b1-c2ed2947e0d8",
+        "data": {
+          "id": "b9942fb6-74a5-4109-835e-2415764abc68->3698bbac-f1c6-463b-a9b1-c2ed2947e0d8",
+          "maxCardinality": "One"
+        }
+      },
+      {
+        "id": "452f60bc-6008-4813-95eb-666d0753c25f->ccb720d2-8e09-4b0d-8d6b-558f9818efa2;ccb720d2-8e09-4b0d-8d6b-558f9818efa2->3698bbac-f1c6-463b-a9b1-c2ed2947e0d8",
+        "type": "Relationship",
+        "source": "452f60bc-6008-4813-95eb-666d0753c25f",
+        "target": "ccb720d2-8e09-4b0d-8d6b-558f9818efa2",
+        "data": {
+          "id": "452f60bc-6008-4813-95eb-666d0753c25f->ccb720d2-8e09-4b0d-8d6b-558f9818efa2",
+          "maxCardinality": "Many"
+        }
+      },
+      {
+        "id": "452f60bc-6008-4813-95eb-666d0753c25f->3698bbac-f1c6-463b-a9b1-c2ed2947e0d8;ccb720d2-8e09-4b0d-8d6b-558f9818efa2->3698bbac-f1c6-463b-a9b1-c2ed2947e0d8",
+        "type": "Relationship",
+        "source": "452f60bc-6008-4813-95eb-666d0753c25f",
+        "target": "3698bbac-f1c6-463b-a9b1-c2ed2947e0d8",
+        "data": {
+          "id": "452f60bc-6008-4813-95eb-666d0753c25f->3698bbac-f1c6-463b-a9b1-c2ed2947e0d8",
+          "maxCardinality": "One"
+        }
+      },
+      {
+        "id": "4175ba5a-264d-48e1-87ae-b9eca3c817f2->e6a1d57f-bd5d-4bf9-8b44-3ba56068f260;e6a1d57f-bd5d-4bf9-8b44-3ba56068f260->9422ff4c-e41b-480c-8b47-a39a6fe0aca3",
+        "type": "Relationship",
+        "source": "4175ba5a-264d-48e1-87ae-b9eca3c817f2",
+        "target": "e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+        "data": {
+          "id": "4175ba5a-264d-48e1-87ae-b9eca3c817f2->e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+          "maxCardinality": "Many"
+        }
+      },
+      {
+        "id": "4175ba5a-264d-48e1-87ae-b9eca3c817f2->9422ff4c-e41b-480c-8b47-a39a6fe0aca3;e6a1d57f-bd5d-4bf9-8b44-3ba56068f260->9422ff4c-e41b-480c-8b47-a39a6fe0aca3",
+        "type": "Relationship",
+        "source": "4175ba5a-264d-48e1-87ae-b9eca3c817f2",
+        "target": "9422ff4c-e41b-480c-8b47-a39a6fe0aca3",
+        "data": {
+          "id": "4175ba5a-264d-48e1-87ae-b9eca3c817f2->9422ff4c-e41b-480c-8b47-a39a6fe0aca3",
+          "maxCardinality": "One"
+        }
+      },
+      {
+        "id": "c9ce29cf-05b9-4488-a13a-bdc84684aac4->60c81ea1-0433-46ea-a267-d2b52879202b;60c81ea1-0433-46ea-a267-d2b52879202b->e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+        "type": "Relationship",
+        "source": "c9ce29cf-05b9-4488-a13a-bdc84684aac4",
+        "target": "60c81ea1-0433-46ea-a267-d2b52879202b",
+        "data": {
+          "id": "c9ce29cf-05b9-4488-a13a-bdc84684aac4->60c81ea1-0433-46ea-a267-d2b52879202b",
+          "maxCardinality": "Many"
+        }
+      },
+      {
+        "id": "c9ce29cf-05b9-4488-a13a-bdc84684aac4->e6a1d57f-bd5d-4bf9-8b44-3ba56068f260;60c81ea1-0433-46ea-a267-d2b52879202b->e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+        "type": "Relationship",
+        "source": "c9ce29cf-05b9-4488-a13a-bdc84684aac4",
+        "target": "e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+        "data": {
+          "id": "c9ce29cf-05b9-4488-a13a-bdc84684aac4->e6a1d57f-bd5d-4bf9-8b44-3ba56068f260",
+          "maxCardinality": "Many"
+        }
+      }
+    ],
+    "viewport": {
+      "x": -856.7831829231745,
+      "y": 121.28831503762126,
+      "zoom": 1.5283765207651658
+    }
+  },
+  "name": "Flugbuchung1_Entity",
+  "folder": {
+    "name": "Flugbuchung",
+    "folderType": 2,
+    "parentFolder": {
+      "depth": 0,
+      "id": 354527,
+      "name": "Diagrams",
+      "folderType": 1
+    },
+    "depth": 1,
+    "id": 359184
+  },
+  "id": 511312,
+  "updatedAtTimestamp": 1784203239
+}

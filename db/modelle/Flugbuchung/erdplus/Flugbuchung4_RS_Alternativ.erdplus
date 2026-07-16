@@ -1,0 +1,718 @@
+{
+  "diagramType": 2,
+  "data": {
+    "nodes": [
+      {
+        "id": "42d527b5-21c3-49d6-87b7-7f94947e0a37",
+        "type": "Table",
+        "position": {
+          "x": -144.41075493526935,
+          "y": 192.7420520154266
+        },
+        "data": {
+          "label": "KUNDE",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "5fdf1c0d-f52a-4455-ab27-92550293d7cb",
+              "name": "Kundennummer",
+              "type": "CHAR(n)",
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "size": "5"
+            },
+            {
+              "id": "e8e3d22d-ee84-4629-aa1d-793f5833dc7c",
+              "name": "Strasse",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "fafd5460-215c-4b7f-807b-fe433a1eae51",
+              "name": "PLZ",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "abd5dfc3-2801-466f-b661-6dae31f79128",
+              "name": "Ort",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "f584db56-bce4-4889-849c-bba3b75f5212",
+              "name": "fk_PERSON",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "4ea6cdee-0fbe-4b3d-88fd-34e4cb5a4129",
+                "sourceTableId": "2a208506-fff4-46ec-adac-1847c5e641d5",
+                "columns": [
+                  {
+                    "id": "fk_1d54ee18-ce9d-44e9-a4d3-5707006b21a3",
+                    "name": "Person_ID",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 152
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "5c58829c-3b76-4cb9-a34f-eb953e3414a7",
+        "type": "Table",
+        "position": {
+          "x": 521.2023230878705,
+          "y": 222.6130780231399
+        },
+        "data": {
+          "label": "FLUG",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "46f2deb5-97f4-4a5f-bd65-68212a4a404a",
+              "name": "fk_FLUGVERBINDUNG",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "c574d08e-0e40-4a6f-9bcb-aad46300d241",
+                "sourceTableId": "d1fb3011-08b5-45b9-94f7-f4c879342855",
+                "columns": [
+                  {
+                    "id": "fk_cea7e2bb-70fa-4534-884d-14d2071a3f79",
+                    "name": "Flugnummer",
+                    "type": "CHAR(n)",
+                    "size": "10"
+                  }
+                ]
+              },
+              "isOptional": false,
+              "isPrimaryKey": true
+            },
+            {
+              "id": "79423c16-1bbf-4064-8734-f4f69ac66878",
+              "name": "fk_VERKEHRSTAG",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "31a88c90-0383-4ba9-9147-f7df0df2e5b6",
+                "sourceTableId": "76d126f3-ecfb-4174-a3b4-a644a60e9759",
+                "columns": [
+                  {
+                    "id": "fk_921c66d3-8b1a-457c-92f4-d4e115d3159d",
+                    "name": "Datum",
+                    "type": "Custom",
+                    "size": "DATE"
+                  }
+                ]
+              },
+              "isOptional": false,
+              "isPrimaryKey": true
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false,
+          "isWeak": true
+        },
+        "measured": {
+          "width": 240,
+          "height": 78
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "2a208506-fff4-46ec-adac-1847c5e641d5",
+        "type": "Table",
+        "position": {
+          "x": -144.44009457350288,
+          "y": 401.3374058396855
+        },
+        "data": {
+          "label": "PERSON",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "1d54ee18-ce9d-44e9-a4d3-5707006b21a3",
+              "name": "Person_ID",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "f14ef0a5-8a07-4b12-b54b-8a6af95dc5db",
+              "name": "Vorname",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "adceb7fe-d38b-4c58-bd25-bb425735f93f",
+              "name": "Nachname",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "1844f170-612b-4b57-a012-e6cd9476949a",
+              "name": "Geburtsdatum",
+              "type": "DATE",
+              "isPrimaryKey": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 126
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "4f02eae5-71f0-493a-ac42-1d911ac6d10f",
+        "type": "Table",
+        "position": {
+          "x": 217.82715551077916,
+          "y": 143
+        },
+        "data": {
+          "label": "BUCHUNG",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "71fe632d-df86-457d-aa93-a98332cc008d",
+              "name": "Buchung_ID",
+              "type": "Custom",
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "size": "BIGINT"
+            },
+            {
+              "id": "3d56c738-1373-4f92-b257-4f00adf85aea",
+              "name": "Buchungsdatum",
+              "type": "DATE",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "52a84141-c4c1-4591-9c13-96087bf7d389",
+              "name": "fk_KUNDE",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "b29fb93e-d431-4950-af85-4f7ccb1da6d4",
+                "sourceTableId": "42d527b5-21c3-49d6-87b7-7f94947e0a37",
+                "columns": [
+                  {
+                    "id": "fk_5fdf1c0d-f52a-4455-ab27-92550293d7cb",
+                    "name": "Kundennummer",
+                    "type": "CHAR(n)",
+                    "size": "5"
+                  }
+                ]
+              },
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 102
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "53d981a0-971f-4e96-9729-155c14c4afee",
+        "type": "Table",
+        "position": {
+          "x": 1137.844740749244,
+          "y": 443.959647002118
+        },
+        "data": {
+          "label": "FLUGHAFEN",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "59ad49bd-410e-457a-b363-c181174f7c6c",
+              "name": "Flughafen_Code",
+              "type": "CHAR(n)",
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "size": "3"
+            },
+            {
+              "id": "8469926e-621e-4671-8622-7e0fba5ebbaa",
+              "name": "Flughafen_Name",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 76
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "76d126f3-ecfb-4174-a3b4-a644a60e9759",
+        "type": "Table",
+        "position": {
+          "x": 217.44499917362322,
+          "y": 247.460271072444
+        },
+        "data": {
+          "label": "VERKEHRSTAG",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "921c66d3-8b1a-457c-92f4-d4e115d3159d",
+              "name": "Datum",
+              "type": "Custom",
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "size": "DATE"
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 52
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "d1fb3011-08b5-45b9-94f7-f4c879342855",
+        "type": "Table",
+        "position": {
+          "x": 824.5806840051422,
+          "y": 331.64852642090176
+        },
+        "data": {
+          "label": "FLUGVERBINDUNG",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "cea7e2bb-70fa-4534-884d-14d2071a3f79",
+              "name": "Flugnummer",
+              "type": "CHAR(n)",
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "size": "10"
+            },
+            {
+              "id": "f135d74c-3716-448b-96eb-ca9345887f89",
+              "name": "Abflugzeit",
+              "type": "Custom",
+              "isPrimaryKey": false,
+              "size": "TIME"
+            },
+            {
+              "id": "e3acc781-06bd-44c8-a269-bb32cb4954b9",
+              "name": "Ankunftzeit",
+              "type": "Custom",
+              "isPrimaryKey": false,
+              "size": "TIME"
+            },
+            {
+              "id": "a0a8adf0-3c53-4a2c-a6f0-d4deb9999e90",
+              "name": "Preis",
+              "type": "NUMERIC(p s)",
+              "isPrimaryKey": false,
+              "size": "9,2"
+            },
+            {
+              "id": "fa0795bd-35dc-4e66-8169-23719a833492",
+              "name": "fk_FLUGHAFEN",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "f231038c-240b-4e8b-8e0f-78cb7ad4a653",
+                "sourceTableId": "53d981a0-971f-4e96-9729-155c14c4afee",
+                "columns": [
+                  {
+                    "id": "fk_59ad49bd-410e-457a-b363-c181174f7c6c",
+                    "name": "Abflughafen_Code",
+                    "type": "CHAR(n)",
+                    "size": "3"
+                  }
+                ]
+              },
+              "isOptional": false
+            },
+            {
+              "id": "3eb3106e-ff2c-4411-9b55-21dfed855d27",
+              "name": "fk_FLUGHAFEN",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "2244f2ca-270f-43e4-9f85-c07d9e30c001",
+                "sourceTableId": "53d981a0-971f-4e96-9729-155c14c4afee",
+                "columns": [
+                  {
+                    "id": "fk_59ad49bd-410e-457a-b363-c181174f7c6c",
+                    "name": "Zielflughafen_Code",
+                    "type": "CHAR(n)",
+                    "size": "3"
+                  }
+                ]
+              },
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 177
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "68a19fef-7f67-4f7c-87d5-537e68cd3aa4",
+        "type": "Table",
+        "position": {
+          "x": 216.55134436690867,
+          "y": 375.6980425580762
+        },
+        "data": {
+          "label": "BUCHUNGSPOSTEN",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "f002d923-a7fb-4c87-8fb1-8b4cbf1abd9a",
+              "name": "fk_BUCHUNG",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "c6909180-fceb-4e9d-9de9-8c19ccf233d9",
+                "sourceTableId": "4f02eae5-71f0-493a-ac42-1d911ac6d10f",
+                "columns": [
+                  {
+                    "id": "fk_71fe632d-df86-457d-aa93-a98332cc008d",
+                    "name": "Buchung_ID",
+                    "type": "Custom",
+                    "size": "BIGINT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "3f007579-48ba-45f3-a514-aee081cb3d8b",
+              "name": "fk_PERSON",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "5af45317-d7ef-4a35-ba2e-249a3e3237de",
+                "sourceTableId": "2a208506-fff4-46ec-adac-1847c5e641d5",
+                "columns": [
+                  {
+                    "id": "fk_1d54ee18-ce9d-44e9-a4d3-5707006b21a3",
+                    "name": "Person_ID",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_774941ce-437a-4c2c-b11b-f2b985bbb450",
+              "name": "fk_FLUG",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "e4e353b0-7d1a-4ce0-8342-501e242d8dba",
+                "sourceTableId": "5c58829c-3b76-4cb9-a34f-eb953e3414a7",
+                "columns": [
+                  {
+                    "id": "fk_fk_cea7e2bb-70fa-4534-884d-14d2071a3f79",
+                    "name": "Flugnummer",
+                    "type": "INT"
+                  },
+                  {
+                    "id": "fk_fk_921c66d3-8b1a-457c-92f4-d4e115d3159d",
+                    "name": "Datum",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 119
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "2a208506-fff4-46ec-adac-1847c5e641d5->42d527b5-21c3-49d6-87b7-7f94947e0a37_4ea6cdee-0fbe-4b3d-88fd-34e4cb5a4129",
+        "type": "Relational",
+        "source": "2a208506-fff4-46ec-adac-1847c5e641d5",
+        "targetHandle": "foreign-key-handle-4ea6cdee-0fbe-4b3d-88fd-34e4cb5a4129",
+        "target": "42d527b5-21c3-49d6-87b7-7f94947e0a37",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "4ea6cdee-0fbe-4b3d-88fd-34e4cb5a4129",
+            "sourceTableId": "2a208506-fff4-46ec-adac-1847c5e641d5",
+            "columns": [
+              {
+                "id": "fk_1d54ee18-ce9d-44e9-a4d3-5707006b21a3",
+                "name": "Person_ID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "d1fb3011-08b5-45b9-94f7-f4c879342855->5c58829c-3b76-4cb9-a34f-eb953e3414a7_c574d08e-0e40-4a6f-9bcb-aad46300d241",
+        "type": "Relational",
+        "source": "d1fb3011-08b5-45b9-94f7-f4c879342855",
+        "targetHandle": "foreign-key-handle-c574d08e-0e40-4a6f-9bcb-aad46300d241",
+        "target": "5c58829c-3b76-4cb9-a34f-eb953e3414a7",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "c574d08e-0e40-4a6f-9bcb-aad46300d241",
+            "sourceTableId": "d1fb3011-08b5-45b9-94f7-f4c879342855",
+            "columns": [
+              {
+                "id": "fk_cea7e2bb-70fa-4534-884d-14d2071a3f79",
+                "name": "Flugnummer",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "76d126f3-ecfb-4174-a3b4-a644a60e9759->5c58829c-3b76-4cb9-a34f-eb953e3414a7_31a88c90-0383-4ba9-9147-f7df0df2e5b6",
+        "type": "Relational",
+        "source": "76d126f3-ecfb-4174-a3b4-a644a60e9759",
+        "targetHandle": "foreign-key-handle-31a88c90-0383-4ba9-9147-f7df0df2e5b6",
+        "target": "5c58829c-3b76-4cb9-a34f-eb953e3414a7",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "31a88c90-0383-4ba9-9147-f7df0df2e5b6",
+            "sourceTableId": "76d126f3-ecfb-4174-a3b4-a644a60e9759",
+            "columns": [
+              {
+                "id": "fk_921c66d3-8b1a-457c-92f4-d4e115d3159d",
+                "name": "Datum",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "42d527b5-21c3-49d6-87b7-7f94947e0a37->4f02eae5-71f0-493a-ac42-1d911ac6d10f_b29fb93e-d431-4950-af85-4f7ccb1da6d4",
+        "type": "Relational",
+        "source": "42d527b5-21c3-49d6-87b7-7f94947e0a37",
+        "targetHandle": "foreign-key-handle-b29fb93e-d431-4950-af85-4f7ccb1da6d4",
+        "target": "4f02eae5-71f0-493a-ac42-1d911ac6d10f",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "b29fb93e-d431-4950-af85-4f7ccb1da6d4",
+            "sourceTableId": "42d527b5-21c3-49d6-87b7-7f94947e0a37",
+            "columns": [
+              {
+                "id": "fk_5fdf1c0d-f52a-4455-ab27-92550293d7cb",
+                "name": "Kundennummer",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "53d981a0-971f-4e96-9729-155c14c4afee->d1fb3011-08b5-45b9-94f7-f4c879342855_f231038c-240b-4e8b-8e0f-78cb7ad4a653",
+        "type": "Relational",
+        "source": "53d981a0-971f-4e96-9729-155c14c4afee",
+        "targetHandle": "foreign-key-handle-f231038c-240b-4e8b-8e0f-78cb7ad4a653",
+        "target": "d1fb3011-08b5-45b9-94f7-f4c879342855",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "f231038c-240b-4e8b-8e0f-78cb7ad4a653",
+            "sourceTableId": "53d981a0-971f-4e96-9729-155c14c4afee",
+            "columns": [
+              {
+                "id": "fk_59ad49bd-410e-457a-b363-c181174f7c6c",
+                "name": "Flughafen_Code",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "53d981a0-971f-4e96-9729-155c14c4afee->d1fb3011-08b5-45b9-94f7-f4c879342855_2244f2ca-270f-43e4-9f85-c07d9e30c001",
+        "type": "Relational",
+        "source": "53d981a0-971f-4e96-9729-155c14c4afee",
+        "targetHandle": "foreign-key-handle-2244f2ca-270f-43e4-9f85-c07d9e30c001",
+        "target": "d1fb3011-08b5-45b9-94f7-f4c879342855",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "2244f2ca-270f-43e4-9f85-c07d9e30c001",
+            "sourceTableId": "53d981a0-971f-4e96-9729-155c14c4afee",
+            "columns": [
+              {
+                "id": "fk_59ad49bd-410e-457a-b363-c181174f7c6c",
+                "name": "Flughafen_Code",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "4f02eae5-71f0-493a-ac42-1d911ac6d10f->68a19fef-7f67-4f7c-87d5-537e68cd3aa4_c6909180-fceb-4e9d-9de9-8c19ccf233d9",
+        "type": "Relational",
+        "source": "4f02eae5-71f0-493a-ac42-1d911ac6d10f",
+        "targetHandle": "foreign-key-handle-c6909180-fceb-4e9d-9de9-8c19ccf233d9",
+        "target": "68a19fef-7f67-4f7c-87d5-537e68cd3aa4",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "c6909180-fceb-4e9d-9de9-8c19ccf233d9",
+            "sourceTableId": "4f02eae5-71f0-493a-ac42-1d911ac6d10f",
+            "columns": [
+              {
+                "id": "fk_71fe632d-df86-457d-aa93-a98332cc008d",
+                "name": "Buchung_ID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "2a208506-fff4-46ec-adac-1847c5e641d5->68a19fef-7f67-4f7c-87d5-537e68cd3aa4_5af45317-d7ef-4a35-ba2e-249a3e3237de",
+        "type": "Relational",
+        "source": "2a208506-fff4-46ec-adac-1847c5e641d5",
+        "targetHandle": "foreign-key-handle-5af45317-d7ef-4a35-ba2e-249a3e3237de",
+        "target": "68a19fef-7f67-4f7c-87d5-537e68cd3aa4",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "5af45317-d7ef-4a35-ba2e-249a3e3237de",
+            "sourceTableId": "2a208506-fff4-46ec-adac-1847c5e641d5",
+            "columns": [
+              {
+                "id": "fk_1d54ee18-ce9d-44e9-a4d3-5707006b21a3",
+                "name": "Person_ID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "5c58829c-3b76-4cb9-a34f-eb953e3414a7->68a19fef-7f67-4f7c-87d5-537e68cd3aa4_e4e353b0-7d1a-4ce0-8342-501e242d8dba",
+        "type": "Relational",
+        "source": "5c58829c-3b76-4cb9-a34f-eb953e3414a7",
+        "targetHandle": "foreign-key-handle-e4e353b0-7d1a-4ce0-8342-501e242d8dba",
+        "target": "68a19fef-7f67-4f7c-87d5-537e68cd3aa4",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "e4e353b0-7d1a-4ce0-8342-501e242d8dba",
+            "sourceTableId": "5c58829c-3b76-4cb9-a34f-eb953e3414a7",
+            "columns": [
+              {
+                "id": "fk_fk_cea7e2bb-70fa-4534-884d-14d2071a3f79",
+                "name": "Flugnummer",
+                "type": "INT"
+              },
+              {
+                "id": "fk_fk_921c66d3-8b1a-457c-92f4-d4e115d3159d",
+                "name": "Datum",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "viewport": {
+      "x": 326.0614279060052,
+      "y": -73.11990541367186,
+      "zoom": 1.2658520662342334
+    }
+  },
+  "name": "Flugbuchung4_RS_Alternativ",
+  "folder": {
+    "name": "Flugbuchung",
+    "folderType": 2,
+    "parentFolder": {
+      "depth": 0,
+      "id": 354527,
+      "name": "Diagrams",
+      "folderType": 1
+    },
+    "depth": 1,
+    "id": 359184
+  },
+  "id": 511687,
+  "updatedAtTimestamp": 1784203401
+}
