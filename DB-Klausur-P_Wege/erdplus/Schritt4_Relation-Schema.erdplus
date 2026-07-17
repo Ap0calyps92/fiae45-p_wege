@@ -1,0 +1,558 @@
+{
+  "diagramType": 2,
+  "data": {
+    "nodes": [
+      {
+        "id": "1d1e979a-448f-4ea9-958e-d68177f94658",
+        "type": "Table",
+        "position": {
+          "x": 289.3454835635936,
+          "y": -344.99148282325757
+        },
+        "data": {
+          "label": "Patient",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "021f4a04-8379-4868-aa7f-cafc0674b8cf",
+              "name": "PatientNr",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "24d32b00-b4dd-463c-8b09-f69d71019add",
+              "name": "Nachname",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "69d5d0a7-efb0-4fc1-aed6-42051f8113c6",
+              "name": "Vorname",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "3ed61de9-15ee-4f4a-b672-2f791e95ab9b",
+              "name": "Strasse",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "b1138284-0bf6-43da-b147-0a7f696373f4",
+              "name": "PLZ",
+              "type": "CHAR(n)",
+              "isPrimaryKey": false,
+              "size": "5"
+            },
+            {
+              "id": "9b4de9ff-300b-4c6b-9ed6-90596c0dbea3",
+              "name": "Ort",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 176
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "7e56e9ab-df70-4165-9cd1-bea178aeaf21",
+        "type": "Table",
+        "position": {
+          "x": 285.5294730163293,
+          "y": -475.2568862205752
+        },
+        "data": {
+          "label": "Arzt",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "ea0bd2d4-6f14-45ec-8e67-cf0412c033d1",
+              "name": "ArztNr",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "79763d62-1a23-4c76-ab53-fe9ec1ab4606",
+              "name": "Name",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "a02f8dc7-2d6c-4751-bf7c-5ba69acb4e8b",
+              "name": "Faktor",
+              "type": "NUMERIC(p s)",
+              "isPrimaryKey": false,
+              "size": "3,1"
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 101
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "e4bf18ba-14c7-42eb-a3b0-42d79996f878",
+        "type": "Table",
+        "position": {
+          "x": 285.23277248202777,
+          "y": -598.4259185432995
+        },
+        "data": {
+          "label": "MedLeistung",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "508c75ca-010a-4c07-9716-31c5f1fe0a61",
+              "name": "MedLeistungNr",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "52e4b576-5a18-4816-9e6f-d3a604079d54",
+              "name": "Bezeichnung",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "fb676a1b-5a9a-4d02-b892-4c434d65228b",
+              "name": "Preis",
+              "type": "NUMERIC(p s)",
+              "isPrimaryKey": false,
+              "size": "9,2"
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 101
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "4f81ec6e-2084-4373-88af-5317829b7c68",
+        "type": "Table",
+        "position": {
+          "x": 290.28474330125357,
+          "y": -155.933589997626
+        },
+        "data": {
+          "label": "ZusatzLeistung",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "e456d06d-c201-475b-823e-77243617c6e5",
+              "name": "ZusatzLeistungNr",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "size": "5"
+            },
+            {
+              "id": "e872ee38-96c2-45ad-99d4-846a1f4c48d9",
+              "name": "Bezeichnung",
+              "type": "VARCHAR(n)",
+              "isPrimaryKey": false,
+              "size": "100"
+            },
+            {
+              "id": "95dc0767-d57f-48df-a123-3b8d6fb7f612",
+              "name": "Tagespreis",
+              "type": "NUMERIC(p s)",
+              "isPrimaryKey": false,
+              "size": "9,2"
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 101
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "31558e5a-f43f-4a07-b1b4-da778da8e4e1",
+        "type": "Table",
+        "position": {
+          "x": -58.69192749907717,
+          "y": -435.7119813163137
+        },
+        "data": {
+          "label": "ErbrachteMedLeistung",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "d96893f1-052f-42fd-ae54-71e153796d88",
+              "name": "ErbrachteMedLeistungID",
+              "type": "INT",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "91effb00-f2df-470e-8c40-740149c2511d",
+              "name": "Leistungsdatum",
+              "type": "DATE",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "26b278ac-a6f9-4fef-8717-da3bc81fe058",
+              "name": "fk_MED_LEISTUNG",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "2ca4aaa7-997a-47f3-a864-16124e2c0f30",
+                "sourceTableId": "e4bf18ba-14c7-42eb-a3b0-42d79996f878",
+                "columns": [
+                  {
+                    "id": "fk_508c75ca-010a-4c07-9716-31c5f1fe0a61",
+                    "name": "MedLeistungNr",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": false,
+              "isOptional": false
+            },
+            {
+              "id": "8ec6578a-e91b-4ae9-a37e-3f0eabad5344",
+              "name": "fk_ARZT",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "f12fc5b9-8de5-4c62-bef2-3575a5c432ce",
+                "sourceTableId": "7e56e9ab-df70-4165-9cd1-bea178aeaf21",
+                "columns": [
+                  {
+                    "id": "fk_ea0bd2d4-6f14-45ec-8e67-cf0412c033d1",
+                    "name": "ArztNr",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": false,
+              "isOptional": false
+            },
+            {
+              "id": "ee9dc2be-4456-4080-8159-3e1796fdfff8",
+              "name": "fk_PATIENT",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "f3a03372-675f-4c01-9531-b05bac3b0fa9",
+                "sourceTableId": "1d1e979a-448f-4ea9-958e-d68177f94658",
+                "columns": [
+                  {
+                    "id": "fk_021f4a04-8379-4868-aa7f-cafc0674b8cf",
+                    "name": "PatientNr",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": false,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 168
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "7879e675-dd9a-4e7f-acc0-7e89d886648d",
+        "type": "Table",
+        "position": {
+          "x": -12.813772524342099,
+          "y": -204.34213562343217
+        },
+        "data": {
+          "label": "ErbrachteZusatzleistung",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "4192e72a-c39f-476e-b8f7-f212f70f9433",
+              "name": "LeistungVon",
+              "type": "DATE",
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "c5798256-f4ef-4841-9a18-c0e765ccd72c",
+              "name": "LeistungBis",
+              "type": "DATE",
+              "isPrimaryKey": false
+            },
+            {
+              "id": "baf271d6-1de1-4ad5-a6af-0671881d3feb",
+              "name": "fk_ZUSATZ_LEISTUNG",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "40d4f2fc-a97b-4f1e-85c1-f5ee5474ad77",
+                "sourceTableId": "4f81ec6e-2084-4373-88af-5317829b7c68",
+                "columns": [
+                  {
+                    "id": "fk_e456d06d-c201-475b-823e-77243617c6e5",
+                    "name": "ZusatzLeistungNr",
+                    "type": "VARCHAR(n)",
+                    "size": "5"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "447d86ea-aff3-4869-8a3e-6614badc007e",
+              "name": "fk_PATIENT",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "fb43b345-08aa-41da-90d9-cf88cf541656",
+                "sourceTableId": "1d1e979a-448f-4ea9-958e-d68177f94658",
+                "columns": [
+                  {
+                    "id": "fk_021f4a04-8379-4868-aa7f-cafc0674b8cf",
+                    "name": "PatientNr",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "numberOfGroups": 0,
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 151
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "65441d98-d958-43eb-b256-ebd9cc231062",
+        "type": "Label",
+        "position": {
+          "x": -74.00000000000011,
+          "y": -678
+        },
+        "data": {
+          "label": "p_wege",
+          "isSelected": false
+        },
+        "measured": {
+          "width": 78,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "922372ac-c536-466b-a91b-cfa151d88bf2",
+        "type": "Label",
+        "position": {
+          "x": -75,
+          "y": -622
+        },
+        "data": {
+          "label": "Tabellennamen von der automatischen",
+          "isSelected": false
+        },
+        "measured": {
+          "width": 313,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "dac3d2af-2a1e-4f7b-9d87-37665aba94a5",
+        "type": "Label",
+        "position": {
+          "x": -73.3216937288741,
+          "y": -604.1234072961516
+        },
+        "data": {
+          "label": "Großschreibung in PascalCase geändert",
+          "isSelected": false
+        },
+        "measured": {
+          "width": 325,
+          "height": 44
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "e4bf18ba-14c7-42eb-a3b0-42d79996f878->31558e5a-f43f-4a07-b1b4-da778da8e4e1_2ca4aaa7-997a-47f3-a864-16124e2c0f30",
+        "type": "Relational",
+        "source": "e4bf18ba-14c7-42eb-a3b0-42d79996f878",
+        "targetHandle": "foreign-key-handle-2ca4aaa7-997a-47f3-a864-16124e2c0f30",
+        "target": "31558e5a-f43f-4a07-b1b4-da778da8e4e1",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "2ca4aaa7-997a-47f3-a864-16124e2c0f30",
+            "sourceTableId": "e4bf18ba-14c7-42eb-a3b0-42d79996f878",
+            "columns": [
+              {
+                "id": "fk_508c75ca-010a-4c07-9716-31c5f1fe0a61",
+                "name": "MedLeistungNr",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "7e56e9ab-df70-4165-9cd1-bea178aeaf21->31558e5a-f43f-4a07-b1b4-da778da8e4e1_f12fc5b9-8de5-4c62-bef2-3575a5c432ce",
+        "type": "Relational",
+        "source": "7e56e9ab-df70-4165-9cd1-bea178aeaf21",
+        "targetHandle": "foreign-key-handle-f12fc5b9-8de5-4c62-bef2-3575a5c432ce",
+        "target": "31558e5a-f43f-4a07-b1b4-da778da8e4e1",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "f12fc5b9-8de5-4c62-bef2-3575a5c432ce",
+            "sourceTableId": "7e56e9ab-df70-4165-9cd1-bea178aeaf21",
+            "columns": [
+              {
+                "id": "fk_ea0bd2d4-6f14-45ec-8e67-cf0412c033d1",
+                "name": "ArztNr",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "1d1e979a-448f-4ea9-958e-d68177f94658->31558e5a-f43f-4a07-b1b4-da778da8e4e1_f3a03372-675f-4c01-9531-b05bac3b0fa9",
+        "type": "Relational",
+        "source": "1d1e979a-448f-4ea9-958e-d68177f94658",
+        "targetHandle": "foreign-key-handle-f3a03372-675f-4c01-9531-b05bac3b0fa9",
+        "target": "31558e5a-f43f-4a07-b1b4-da778da8e4e1",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "f3a03372-675f-4c01-9531-b05bac3b0fa9",
+            "sourceTableId": "1d1e979a-448f-4ea9-958e-d68177f94658",
+            "columns": [
+              {
+                "id": "fk_021f4a04-8379-4868-aa7f-cafc0674b8cf",
+                "name": "PatientNr",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "4f81ec6e-2084-4373-88af-5317829b7c68->7879e675-dd9a-4e7f-acc0-7e89d886648d_40d4f2fc-a97b-4f1e-85c1-f5ee5474ad77",
+        "type": "Relational",
+        "source": "4f81ec6e-2084-4373-88af-5317829b7c68",
+        "targetHandle": "foreign-key-handle-40d4f2fc-a97b-4f1e-85c1-f5ee5474ad77",
+        "target": "7879e675-dd9a-4e7f-acc0-7e89d886648d",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "40d4f2fc-a97b-4f1e-85c1-f5ee5474ad77",
+            "sourceTableId": "4f81ec6e-2084-4373-88af-5317829b7c68",
+            "columns": [
+              {
+                "id": "fk_e456d06d-c201-475b-823e-77243617c6e5",
+                "name": "ZusatzLeistungNr",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "1d1e979a-448f-4ea9-958e-d68177f94658->7879e675-dd9a-4e7f-acc0-7e89d886648d_fb43b345-08aa-41da-90d9-cf88cf541656",
+        "type": "Relational",
+        "source": "1d1e979a-448f-4ea9-958e-d68177f94658",
+        "targetHandle": "foreign-key-handle-fb43b345-08aa-41da-90d9-cf88cf541656",
+        "target": "7879e675-dd9a-4e7f-acc0-7e89d886648d",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "fb43b345-08aa-41da-90d9-cf88cf541656",
+            "sourceTableId": "1d1e979a-448f-4ea9-958e-d68177f94658",
+            "columns": [
+              {
+                "id": "fk_021f4a04-8379-4868-aa7f-cafc0674b8cf",
+                "name": "PatientNr",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "viewport": {
+      "x": 1185.4477792400962,
+      "y": 713.119994349023,
+      "zoom": 0.8681402276010417
+    }
+  },
+  "name": "Schritt4_Relation-Schema",
+  "folder": {
+    "name": "Klausur",
+    "folderType": 2,
+    "parentFolder": {
+      "depth": 0,
+      "id": 354527,
+      "name": "Diagrams",
+      "folderType": 1
+    },
+    "depth": 1,
+    "id": 360358
+  },
+  "id": 512498,
+  "updatedAtTimestamp": 1784282704
+}
