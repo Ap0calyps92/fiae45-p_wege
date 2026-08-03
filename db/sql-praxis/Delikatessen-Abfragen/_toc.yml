@@ -1,0 +1,18 @@
+- title: README
+  file: /README
+- title: 0X-Datenbank vorbereiten
+  file: /0X-Datenbank vorbereiten
+- title: 01-Lieferanten
+  file: /01-Lieferanten
+- title: 02-Kunden
+  file: /02-Kunden
+- title: 03-Mitarbeiter
+  file: /03-Mitarbeiter
+- title: 04-Kategorien und Artikel
+  file: /04-Kategorien und Artikel
+- title: 05-Prozentberechnungen
+  file: /05-Prozentberechnungen
+- title: 06-JOINS vs Unterabfragen in SELECT
+  file: /06-Unterabfragen-Übungen
+- title: 07-Unterabfragen in WHERE und HAVING Klauseln
+  file: /07-Mehr-Unterabfragen

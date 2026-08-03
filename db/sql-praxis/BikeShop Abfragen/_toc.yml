@@ -1,0 +1,20 @@
+- title: README
+  file: /README
+- title: BikeShop Datenbank
+  file: /BikeShop Datenbank/BikeShop Datenbank
+  sections:
+    - title: Wiederherstellung aus Backup
+      file: /BikeShop Datenbank/Wiederherstellung aus Backup
+- title: BikeShop Abfragen
+  file: /BikeShop Abfragen/BikeShop Abfragen
+  sections:
+    - title: Produkttypen
+      file: /BikeShop Abfragen/Produkttypen
+    - title: Produktkategorien
+      file: /BikeShop Abfragen/Produktkategorien
+    - title: Kunden und Bestellungen
+      file: /BikeShop Abfragen/Kunden und Bestellungen
+    - title: Mitarbeiter
+      file: /BikeShop Abfragen/Mitarbeiter
+    - title: Pivot und Unpivot
+      file: /BikeShop Abfragen/Pivot und Unpivot
