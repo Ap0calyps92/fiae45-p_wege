@@ -6,7 +6,7 @@
 
 ### Lösung zu 1
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung](1-1-helpdesk.png)
 
 ## 2. Schließsystem einer Hausverwaltung
 
@@ -14,7 +14,7 @@
 
 ### Lösung zu 2
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung](1-2-schließsystem.png)
 
 ## 3. Webshop für Haustechnik
 
@@ -22,7 +22,7 @@
 
 ### Lösung zu 3
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung](1-3-webshop.png)
 
 ## 4. Terminbuchungssystem einer Klinik
 
@@ -30,7 +30,7 @@
 
 ### Lösung zu 4
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung](1-4-terminbuchungssystem.png)
 
 ## 5. Sensoren im Gebäudemanagement
 
