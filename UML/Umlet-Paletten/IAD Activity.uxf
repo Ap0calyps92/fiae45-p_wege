@@ -1,0 +1,111 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>300</x><y>630</y><w>210</w><h>100</h></coordinates><panel_attributes>fg=white
+customelement=
+drawRectangleRound(0,0,width,height,25) fg=black lt=. //fg= bg= lt= lw= //Parameters (x, y, width, height)
+drawText("Unterbrechungsbereich",25,25,left) fg=black
+group=3</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>70</x><y>150</y><w>100</w><h>40</h></coordinates><panel_attributes>Aktion</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>650</y><w>30</w><h>30</h></coordinates><panel_attributes>fg=white
+customelement=
+drawLine(width * 0.5,0,0,height) fg=black
+drawLine(width * 0.5,0,width,height) fg=black
+drawLine(0,height,width,height) fg=black
+group=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>900</x><y>130</y><w>130</w><h>230</h></coordinates><panel_attributes>lt=&lt;-
+m2=[Bedingung]</panel_attributes><additional_attributes>10;210;110;210;110;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>740</x><y>850</y><w>130</w><h>30</h></coordinates><panel_attributes>{Objektbedingung}
+group=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>130</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>170</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;10;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>210</y><w>110</w><h>80</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;10;10;60;90;60</additional_attributes></element><element><id>Text</id><coordinates><x>600</x><y>680</y><w>90</w><h>30</h></coordinates><panel_attributes>[Exception]
+group=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>680</y><w>120</w><h>50</h></coordinates><panel_attributes>*Objektknoten*
+[Zustand]</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>740</x><y>810</y><w>130</w><h>30</h></coordinates><panel_attributes>{upperBound=5}
+group=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>740</x><y>830</y><w>130</w><h>30</h></coordinates><panel_attributes>{ordering = FIFO}
+group=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>290</y><w>100</w><h>80</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>80;10;80;60;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>910</x><y>350</y><w>150</w><h>230</h></coordinates><panel_attributes>lt=&lt;-
+m2=[Bedingung]</panel_attributes><additional_attributes>130;210;10;210;10;10;120;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>530</y><w>190</w><h>370</h></coordinates><panel_attributes>Partition
+--
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>820</x><y>390</y><w>100</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m2=[Bedingung]</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>390</y><w>100</w><h>140</h></coordinates><panel_attributes>lt=-&gt;
+m1=[Bedingung]</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>240</y><w>20</w><h>20</h></coordinates><panel_attributes>fg=white
+customelement=
+drawCircle(10,10,10) fg=black lt=- //fg= bg= lt= lw= //Parameters (x, y, width, height)
+drawText("*A*",11,14,center) fg=black </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>690</y><w>70</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+group=3</panel_attributes><additional_attributes>40;120;10;50;50;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>1350</y><w>210</w><h>280</h></coordinates><panel_attributes>fg=white
+customelement=
+drawRectangleRound(0,0,width,height,25) fg=black lt=. //fg= bg= lt= lw= //Parameters (x, y, width, height)
+drawText("if",25,25,left) fg=black
+drawLine(0,height *0.33, width, height *0.33) lt=. fg=black
+drawText("then",25,height *0.33 +25,left) fg=black
+drawLine(0,height *0.66, width, height *0.66) lt=. fg=black
+drawText("else",25,height *0.66 +25,left) fg=black</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>1350</y><w>210</w><h>280</h></coordinates><panel_attributes>fg=white
+customelement=
+drawRectangleRound(0,0,width,height,25) fg=black lt=. //fg= bg= lt= lw= //Parameters (x, y, width, height)
+drawText("for",25,25,left) fg=black
+drawLine(0,height *0.33, width, height *0.33) lt=. fg=black
+drawText("while",25,height *0.33 +25,left) fg=black
+drawLine(0,height *0.66, width, height *0.66) lt=. fg=black
+drawText("do",25,height *0.66 +25,left) fg=black</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>300</x><y>100</y><w>20</w><h>20</h></coordinates><panel_attributes>type=initial</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>300</x><y>150</y><w>20</w><h>20</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>300</x><y>200</y><w>20</w><h>20</h></coordinates><panel_attributes>type=flow_final</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>1350</y><w>210</w><h>280</h></coordinates><panel_attributes>fg=white
+customelement=
+drawRectangleRound(0,0,width,height,25) fg=black lt=. //fg= bg= lt= lw= //Parameters (x, y, width, height)
+drawText("for",25,25,left) fg=black
+drawLine(0,height *0.33, width, height *0.33) lt=. fg=black
+drawText("do",25,height *0.33 +25,left) fg=black
+drawLine(0,height *0.66, width, height *0.66) lt=. fg=black
+drawText("while",25,height *0.66 +25,left) fg=black</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>60</x><y>980</y><w>130</w><h>40</h></coordinates><panel_attributes>Test
+group=5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>190</x><y>990</y><w>20</w><h>20</h></coordinates><panel_attributes>
+group=5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>210</x><y>970</y><w>20</w><h>20</h></coordinates><panel_attributes>type=decision
+group=5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>430</x><y>1580</y><w>20</w><h>20</h></coordinates><panel_attributes>
+group=6</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>450</x><y>1560</y><w>20</w><h>20</h></coordinates><panel_attributes>type=decision
+group=6</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>300</x><y>1570</y><w>130</w><h>40</h></coordinates><panel_attributes>Test
+group=6</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>180</x><y>1490</y><w>20</w><h>20</h></coordinates><panel_attributes>
+group=7</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>200</x><y>1470</y><w>20</w><h>20</h></coordinates><panel_attributes>type=decision
+group=7</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>50</x><y>1480</y><w>130</w><h>40</h></coordinates><panel_attributes>Test
+group=7</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>670</x><y>1390</y><w>20</w><h>20</h></coordinates><panel_attributes>
+group=8</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>690</x><y>1370</y><w>20</w><h>20</h></coordinates><panel_attributes>type=decision
+group=8</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>540</x><y>1380</y><w>130</w><h>40</h></coordinates><panel_attributes>Test
+group=8</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>50</x><y>1390</y><w>130</w><h>40</h></coordinates><panel_attributes>Initialisierung</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>300</x><y>1390</y><w>130</w><h>40</h></coordinates><panel_attributes>Initialisierung</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>310</x><y>1480</y><w>130</w><h>40</h></coordinates><panel_attributes>Schleifenaktion</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>50</x><y>1570</y><w>130</w><h>40</h></coordinates><panel_attributes>Schleifenaktion</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>540</x><y>1480</y><w>130</w><h>40</h></coordinates><panel_attributes>Dann-Aktion</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>540</x><y>1570</y><w>130</w><h>40</h></coordinates><panel_attributes>Sonst-Aktion</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>1050</y><w>210</w><h>280</h></coordinates><panel_attributes>fg=white
+customelement=
+drawRectangleRound(0,0,width,height,25) fg=black lt=. //fg= bg= lt= lw= //Parameters (x, y, width, height)
+drawText("for",25,25,left) fg=black
+drawLine(0,height *0.33, width, height *0.33) lt=. fg=black
+drawText("while",25,height *0.33 +25,left) fg=black
+drawLine(0,height *0.66, width, height *0.66) lt=. fg=black
+drawText("do",25,height *0.66 +25,left) fg=black</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>40</x><y>920</y><w>260</w><h>30</h></coordinates><panel_attributes>*Knoten für Kontrollstrukturen*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>710</x><y>80</y><w>260</w><h>30</h></coordinates><panel_attributes>*Kanten*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>350</x><y>100</y><w>110</w><h>30</h></coordinates><panel_attributes>*Startknoten*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>350</x><y>150</y><w>110</w><h>30</h></coordinates><panel_attributes>*Endknoten*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>350</x><y>200</y><w>160</w><h>30</h></coordinates><panel_attributes>*Kontrollflussende*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>310</y><w>210</w><h>180</h></coordinates><panel_attributes>fg=white
+customelement=
+drawRectangleRound(0,0,width,height,25) fg=black lt=- //fg= bg= lt= lw= //Parameters (x, y, width, height)
+drawText("Aktivität mit Parametern",25,25,left) fg=black</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>240</y><w>20</w><h>20</h></coordinates><panel_attributes>fg=white
+customelement=
+drawCircle(10,10,10) fg=black lt=- //fg= bg= lt= lw= //Parameters (x, y, width, height)
+drawText("*B*",11,14,center) fg=black </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>240</y><w>20</w><h>20</h></coordinates><panel_attributes>fg=white
+customelement=
+drawCircle(10,10,10) fg=black lt=- //fg= bg= lt= lw= //Parameters (x, y, width, height)
+drawText("*C*",11,14,center) fg=black </panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>400</x><y>240</y><w>190</w><h>30</h></coordinates><panel_attributes>*Konnektor (Sprungmarke)*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>300</x><y>300</y><w>40</w><h>40</h></coordinates><panel_attributes>type=decision</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>350</x><y>300</y><w>240</w><h>30</h></coordinates><panel_attributes>*Entscheidung / Zusammenführung*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLTimer</id><coordinates><x>290</x><y>520</y><w>80</w><h>80</h></coordinates><panel_attributes>time signal</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>510</x><y>520</y><w>100</w><h>40</h></coordinates><panel_attributes>receive
+signal
+type=receiver</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>400</x><y>520</y><w>100</w><h>40</h></coordinates><panel_attributes>send
+signal
+type=sender</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSyncBarHorizontal</id><coordinates><x>300</x><y>370</y><w>80</w><h>20</h></coordinates><panel_attributes>lw=5
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSyncBarVertical</id><coordinates><x>400</x><y>380</y><w>20</w><h>70</h></coordinates><panel_attributes>template=txt
+title=titletext
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>430</x><y>380</y><w>240</w><h>30</h></coordinates><panel_attributes>*Parallelisierung / Synchronisation*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>870</x><y>630</y><w>20</w><h>20</h></coordinates><panel_attributes>
+group=10</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>740</x><y>620</y><w>130</w><h>40</h></coordinates><panel_attributes>Aktion u. Objekt-Pin
+group=10</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>110</y><w>210</w><h>180</h></coordinates><panel_attributes>fg=white
+customelement=
+drawRectangleRound(0,0,width,height,25) fg=black lt=- //fg= bg= lt= lw= //Parameters (x, y, width, height)
+drawText("Aktivität",25,25,left) fg=black</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>10</x><y>350</y><w>70</w><h>40</h></coordinates><panel_attributes>Objekt
+bg=#FFFFFF
+transparency=0
+layer=3</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>220</x><y>400</y><w>70</w><h>40</h></coordinates><panel_attributes>Objekt
+bg=#FFFFFF
+transparency=0
+layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>860</x><y>600</y><w>70</w><h>30</h></coordinates><panel_attributes>Pin-Name
+group=10</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>750</y><w>120</w><h>60</h></coordinates><panel_attributes>*&lt;&lt;centralBuffer&gt;&gt;*
+Objekttyp
+[Zustand]
+group=11</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>50</x><y>0</y><w>520</w><h>70</h></coordinates><panel_attributes>*Elemente für Aktivitätsdiagramme*
+Legen Sie die Datei in den Ordner *"palettes"* der *Umlet Standalone-Version*
+oder öffnen Sie sie in einem extra Browser Tab in *Umletino*.</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>1050</y><w>210</w><h>190</h></coordinates><panel_attributes>fg=white
+customelement=
+drawRectangleRound(0,0,width,height,25) fg=black lt=. //fg= bg= lt= lw= //Parameters (x, y, width, height)
+drawText("do",25,25,left) fg=black
+drawLine(0,height *0.5, width, height *0.5) lt=. fg=black
+drawText("while",25,height *0.5 +25,left) fg=black</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>1050</y><w>210</w><h>190</h></coordinates><panel_attributes>fg=white
+customelement=
+drawRectangleRound(0,0,width,height,25) fg=black lt=. //fg= bg= lt= lw= //Parameters (x, y, width, height)
+drawText("while",25,25,left) fg=black
+drawLine(0,height *0.5, width, height *0.5) lt=. fg=black
+drawText("do",25,height *0.5 +25,left) fg=black</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>90</x><y>850</y><w>340</w><h>40</h></coordinates><panel_attributes>*Umlet kann nur vertikalte Partitionen darstellen,*
+da Text noch nicht rotiert werden kann.</panel_attributes><additional_attributes></additional_attributes></element></diagram>
