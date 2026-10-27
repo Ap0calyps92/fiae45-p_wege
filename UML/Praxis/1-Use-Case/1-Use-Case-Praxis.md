@@ -38,7 +38,7 @@
 
 ### Lösung zu 5
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung 5](1-5-gebäudemanagment.png)
 
 ## 6. Webanwendung des Helferlein Vereins
 
@@ -46,7 +46,7 @@
 
 ### Lösung zu 6
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung 6](1-6-webanwendung-helferlein.png)
 
 ## 7. Lagerverwaltung
 
@@ -54,4 +54,4 @@
 
 ### Lösung zu 7
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung 7](1-7-lagerverwaltung.png)
