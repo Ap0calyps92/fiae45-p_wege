@@ -6,7 +6,7 @@
 
 ### Lösung zu 1
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung zu 1](2-1-Rechnungseingang.png)
 
 ## 2. Onlineshop Activity
 
@@ -14,7 +14,7 @@
 
 ### Lösung zu 2
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung zu 2](2-2-Onlineshop.png)
 
 ## 3. Fingerabdruck Recherche
 
@@ -22,7 +22,7 @@
 
 ### Lösung zu 3
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung zu 3](2-3-Fingerabdruck.png)
 
 ## 4. EC-Automat
 
@@ -30,7 +30,7 @@
 
 ### Lösung zu 4
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung zu 4](2-4-EC.png)
 
 ## 5. Bewässerungs-Steuerung
 
@@ -38,7 +38,7 @@
 
 ### Lösung zu 5
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung zu 5](2-5-Bewässerung.png)
 
 ## 6. Brauerei-Informationsveranstaltung
 
@@ -46,4 +46,4 @@
 
 ### Lösung zu 6
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung zu 6](2-6-Brauerei.png)

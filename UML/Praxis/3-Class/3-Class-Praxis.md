@@ -6,13 +6,22 @@
 
 ### Lösung zu 1
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung zu 1](3-1-Kunden.png)
 
 ## 2. Begriffsklärung
 
 ![Begriffsklärung](../_Bilder/3-2-Begriffsklärung.png)
 
 ### Lösung zu 2
+
+#### Klasse:
+Eine Klasse ist ein Bauplan bzw. eine Vorlage für Objekte. Sie legt fest, welche Attribute (Eigenschaften) und Methoden (Verhalten) die Objekte dieser Klasse haben.
+
+#### Vererbung:
+Bei der Vererbung übernimmt eine Unterklasse alle Attribute und Methoden einer Oberklasse und kann diese um eigene erweitern oder überschreiben. So wird Code wiederverwendet und eine "ist-ein"-Beziehung abgebildet.
+
+#### Objekt:
+Ein Objekt ist eine konkrete Instanz einer Klasse, die zur Laufzeit erzeugt wird. Es besitzt eigene Attributwerte (Zustand) und kann die Methoden der Klasse ausführen.
 
 [Binden Sie hier das PNG Ihrer Lösung ein.]
 
@@ -22,7 +31,7 @@
 
 ### Lösung zu 3
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung zu 3](3-3-Getränke.png)
 
 ## 4. Beziehungen identifizieren und erklären
 
@@ -36,9 +45,9 @@ C) In einer Mietervereinigung gibt es mehrere Mieter.
 
 ### Lösung zu 4
 
-[Nennen und Begründen Sie die Beziehungstypen und binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung zu 4](3-4-Beziehungen.png)
 
-## 5. Kursverwaltung und Rechnungserstellung 
+## 5. Kursverwaltung und Rechnungserstellung
 
 Skizzieren Sie in UML-Notation die Beziehungen zwischen den Klassen. In der Darstellung der Klassen geben Sie nur die Klaasenbezeichnungen an. Begründen Sie in Stichworten die Auswahl der Beziehungstypen.
 
@@ -76,7 +85,7 @@ Diese Übung hat den gleichen Projektkontext wie Übung 1 der [Use-Case Übungen
 
 [Binden Sie hier das PNG Ihrer Lösung ein.]
 
-## 9. Bioscan: Erfassung von Fingerabdrücken und Handabdrücken 
+## 9. Bioscan: Erfassung von Fingerabdrücken und Handabdrücken
 
 ![Arten von Beziehungen](../_Bilder/3-9-Bioscan%201.png)
 
@@ -88,7 +97,7 @@ Diese Übung hat den gleichen Projektkontext wie Übung 1 der [Use-Case Übungen
 
 [Binden Sie hier das PNG Ihrer Lösung ein.]
 
-## 10. Schiffsreisen 
+## 10. Schiffsreisen
 
 ![Anweisungen](../_Bilder/3-10-Schiffsreisen%201.png)
 
