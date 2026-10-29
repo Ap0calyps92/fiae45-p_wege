@@ -55,7 +55,7 @@ Skizzieren Sie in UML-Notation die Beziehungen zwischen den Klassen. In der Dars
 
 ### Lösung zu 5
 
-[Binden Sie hier das PNG Ihrer Lösung ein und begründen Sie die ausgewählten Beziehungstypen]
+![Lösung zu 5](3-5-Kursrechnung.png)
 
 ## 6. Programm zur Schadensregulierung bei einer Versicherungsgesellschaft
 
@@ -75,7 +75,7 @@ Diese Übung hat den gleichen Projektkontext wie Übung 1 der [Use-Case Übungen
 
 ### Lösung zu 7
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung zu 7](3-7-helferlein.png)
 
 ## 8. Leichtathletik Wettkämpfe
 

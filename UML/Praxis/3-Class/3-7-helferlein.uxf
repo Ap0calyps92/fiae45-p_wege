@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>860</x><y>220</y><w>100</w><h>40</h></coordinates><panel_attributes>Client</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>820</x><y>360</y><w>180</w><h>90</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Mitglied
+--
+--
+setService(String) : void
+giveRating(Integer) : Double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>900</x><y>250</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>340</y><w>310</w><h>130</h></coordinates><panel_attributes>Proxy
+--
+- mitglied : RealMitglied
+- user : RealMitglied
+--
++ Proxy(mitglied : RealMitglied, user : RealMitglied)
++ setService(String) : void
++ giveRating(Integer) : Double
++ isOwner() : boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>780</x><y>580</y><w>270</w><h>180</h></coordinates><panel_attributes>RealMitglied
+--
+- name : String
+- service : String
+- rating : Double
+- countRatings : Integer
+--
++ RealMitglied(name : String, service : String)
++ setService(String) : void
++ giveRating(Integer) : Double
++ getName() : String
++ getService() : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>390</y><w>200</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>180;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>900</x><y>440</y><w>30</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>460</y><w>320</w><h>240</h></coordinates><panel_attributes>lt=-&gt;
+m2=2</panel_attributes><additional_attributes>10;10;10;210;300;210</additional_attributes></element></diagram>

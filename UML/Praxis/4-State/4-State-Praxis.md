@@ -10,7 +10,7 @@ Folgende Zustände sind gegeben:
 
 ### Lösung zu 1
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung zu 1](4-1-Trainingsgerät.png)
 
 ## 2. Zustände eines E-Bike-Ladegeräts
 
@@ -18,7 +18,7 @@ Folgende Zustände sind gegeben:
 
 ### Lösung zu 2
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung zu 2](4-2-Ladegerät.png)
 
 ## 3. Zustände im Immobilienverkaufs
 
@@ -26,7 +26,7 @@ Folgende Zustände sind gegeben:
 
 ### Lösung zu 3
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung zu 3](4-3-Immobilienverkauf.png)
 
 ## 4. Gebäude-Lichtsteuerungssystem
 

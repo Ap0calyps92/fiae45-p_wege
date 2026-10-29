@@ -1,0 +1,29 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLSpecialState</id><coordinates><x>740</x><y>40</y><w>20</w><h>20</h></coordinates><panel_attributes>type=initial</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>670</x><y>160</y><w>160</w><h>80</h></coordinates><panel_attributes>Leistungsstufe 1
+--
+do / pulsMessen
+
+valign=top</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>670</x><y>320</y><w>160</w><h>80</h></coordinates><panel_attributes>Leistungsstufe 2
+--
+do / pulsMessen
+
+valign=top</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>670</x><y>470</y><w>160</w><h>80</h></coordinates><panel_attributes>Leistungsstufe 3
+--
+do / pulsMessen
+
+valign=top</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>230</y><w>190</w><h>110</h></coordinates><panel_attributes>lt=-&gt;
+after(1min) [Puls &lt; maxPuls]</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>50</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>820</x><y>350</y><w>250</w><h>180</h></coordinates><panel_attributes>lt=-&gt;
+after(1min) [Puls &lt; maxPuls]</panel_attributes><additional_attributes>10;10;70;10;70;160;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>370</y><w>110</w><h>150</h></coordinates><panel_attributes>lt=-&gt;
+[Puls&gt;maxPuls]</panel_attributes><additional_attributes>80;130;10;130;10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>210</y><w>110</w><h>150</h></coordinates><panel_attributes>lt=-&gt;
+[Puls&gt;maxPuls]</panel_attributes><additional_attributes>80;130;10;130;10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>160</y><w>310</w><h>210</h></coordinates><panel_attributes>lt=-&gt;
+                                    after(trainingszeit)</panel_attributes><additional_attributes>290;20;110;20;110;190</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>340</y><w>200</w><h>40</h></coordinates><panel_attributes>lt=-&gt;
+after(trainingszeit)</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>360</y><w>300</w><h>190</h></coordinates><panel_attributes>lt=-&gt;
+                                    after(trainingszeit)</panel_attributes><additional_attributes>280;170;100;170;100;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>480</x><y>350</y><w>20</w><h>20</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>270</y><w>210</w><h>190</h></coordinates><panel_attributes>Trainingsgerät
+--
+Leistungsstufe
+maxPuls
+Puls
+Trainingszeit
+Startzeit
+Trainingsende
+--
+pulsMessen(): int</panel_attributes><additional_attributes></additional_attributes></element></diagram>
