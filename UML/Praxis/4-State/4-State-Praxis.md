@@ -37,7 +37,7 @@ Folgende Zustände sind gegeben:
 
 ### Lösung zu 4
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung zu 4](4-4-Lichsteuerung.png)
 
 ## 5. Buchungssystem für Zeitfenster in einem Impfzentrum
 
@@ -45,4 +45,4 @@ Folgende Zustände sind gegeben:
 
 ### Lösung zu 5
 
-[Binden Sie hier das PNG Ihrer Lösung ein.]
+![Lösung zu 5](4-5-Buchungsystem-Impfzentrum.png)
