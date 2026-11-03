@@ -8,22 +8,22 @@ ausführt, welche in der Meta Horizon-App stattfinden und welche das Headset üb
 
 ## Diagramm
 
-![Activity Diagramm](png/2-Activity-Diagramm.png)
+![Activity Diagramm](png/2-Activity-Diagram.png)
 
 ## Beschreibungstext
 
 Bevor die Meta Quest 3 zum ersten Mal genutzt wird, lädt der Nutzer das Headset
 vollständig auf. Anschließend hält er die Ein-/Ausschalttaste gedrückt, bis das Headset
 mit einem Signalton startet und das Meta-Logo anzeigt. Danach schaltet der Nutzer die
-beiden Controller ein. Dabei spielt die Reihenfolge keine Rolle, der linke und der
+beiden Controller ein. Die Reihenfolge spielt dabei keine Rolle, der linke und der
 rechte Controller können auch gleichzeitig eingeschaltet werden. Erst wenn beide bereit
 sind, geht es weiter.
 
 Das Headset startet nun die VR-Einführung. Der Nutzer wählt die Sprache, verbindet das
 Headset mit dem WLAN und passt die Passform an seinen Kopf an. Danach installiert er die
 Meta Horizon-App auf seinem Smartphone und öffnet sie. Hat er bereits ein Meta-Konto,
-meldet er sich an, andernfalls erstellt er ein neues Konto. In beiden Fällen geht es
-anschließend gleich weiter.
+meldet er sich an, andernfalls erstellt er ein neues Konto. Danach geht es in beiden
+Fällen auf dieselbe Weise weiter.
 
 Um das Headset zu koppeln, benötigt der Nutzer in der App die Option „Neues Headset
 koppeln“. Fehlt diese Option, muss er die App aktualisieren, schließen und neu öffnen.

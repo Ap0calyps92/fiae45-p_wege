@@ -1,70 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
-  <zoom_level>10</zoom_level>
-  <element>
-    <id>UMLSpecialState</id>
-    <coordinates>
-      <x>10</x>
-      <y>10</y>
-      <w>20</w>
-      <h>20</h>
-    </coordinates>
-    <panel_attributes>type=initial</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLSpecialState</id>
-    <coordinates>
-      <x>10</x>
-      <y>90</y>
-      <w>20</w>
-      <h>20</h>
-    </coordinates>
-    <panel_attributes>type=termination</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLSpecialState</id>
-    <coordinates>
-      <x>10</x>
-      <y>50</y>
-      <w>20</w>
-      <h>20</h>
-    </coordinates>
-    <panel_attributes>type=final</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLSpecialState</id>
-    <coordinates>
-      <x>10</x>
-      <y>190</y>
-      <w>40</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>type=decision</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>10</x>
-      <y>130</y>
-      <w>90</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>state</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>20</x>
-      <y>640</y>
-      <w>180</w>
-      <h>210</h>
-    </coordinates>
-    <panel_attributes>   Zustand mit Regionen
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLSpecialState</id><coordinates><x>10</x><y>10</y><w>20</w><h>20</h></coordinates><panel_attributes>type=initial</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>10</x><y>90</y><w>20</w><h>20</h></coordinates><panel_attributes>type=termination</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>10</x><y>50</y><w>20</w><h>20</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>10</x><y>190</y><w>40</w><h>40</h></coordinates><panel_attributes>type=decision</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>10</x><y>130</y><w>90</w><h>40</h></coordinates><panel_attributes>state</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>20</x><y>640</y><w>180</w><h>210</h></coordinates><panel_attributes>   Zustand mit Regionen
 
 [Region]
 
@@ -77,113 +11,14 @@
 
 
 valign=top
-halign=left</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>60</x>
-      <y>300</y>
-      <w>100</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>state
-group=2</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>20</x>
-      <y>560</y>
-      <w>120</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes>state with
+halign=left</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>60</x><y>300</y><w>100</w><h>40</h></coordinates><panel_attributes>state
+group=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>20</x><y>560</y><w>120</w><h>60</h></coordinates><panel_attributes>state with
 substates
-symbol=substate</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>260</x>
-      <y>220</y>
-      <w>190</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>10</x>
-      <y>310</y>
-      <w>120</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;
+symbol=substate</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>220</y><w>190</w><h>30</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>10</x><y>310</y><w>120</w><h>80</h></coordinates><panel_attributes>lt=-&gt;
 self
-group=2</panel_attributes>
-    <additional_attributes>100.0;30.0;100.0;60.0;10.0;60.0;10.0;10.0;50.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLSpecialState</id>
-    <coordinates>
-      <x>20</x>
-      <y>520</y>
-      <w>20</w>
-      <h>20</h>
-    </coordinates>
-    <panel_attributes>type=history_shallow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLSpecialState</id>
-    <coordinates>
-      <x>50</x>
-      <y>520</y>
-      <w>20</w>
-      <h>20</h>
-    </coordinates>
-    <panel_attributes>type=history_deep</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>260</x>
-      <y>750</y>
-      <w>390</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;
-[Vorbedingung] Event / [Nachbedingung]</panel_attributes>
-    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>260</x>
-      <y>250</y>
-      <w>390</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;
-Event [Guard] / Effect</panel_attributes>
-    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>470</x>
-      <y>30</y>
-      <w>180</w>
-      <h>140</h>
-    </coordinates>
-    <panel_attributes>state
+group=2</panel_attributes><additional_attributes>100;30;100;60;10;60;10;10;50;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>20</x><y>520</y><w>20</w><h>20</h></coordinates><panel_attributes>type=history_shallow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>50</x><y>520</y><w>20</w><h>20</h></coordinates><panel_attributes>type=history_deep</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>750</y><w>390</w><h>40</h></coordinates><panel_attributes>lt=-&gt;
+[Vorbedingung] Event / [Nachbedingung]</panel_attributes><additional_attributes>10;20;370;20</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>250</y><w>390</w><h>40</h></coordinates><panel_attributes>lt=-&gt;
+Event [Guard] / Effect</panel_attributes><additional_attributes>10;20;370;20</additional_attributes></element><element><id>UMLState</id><coordinates><x>470</x><y>30</y><w>180</w><h>140</h></coordinates><panel_attributes>state
 --
 
 entry / Aktion
@@ -192,256 +27,33 @@ exit / Aktion
 event / Aktion
 event [guard] / defer
 valign=top
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>260</x>
-      <y>290</y>
-      <w>390</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;
-Event</panel_attributes>
-    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>260</x>
-      <y>330</y>
-      <w>390</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;
-Event / Effect</panel_attributes>
-    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>260</x>
-      <y>370</y>
-      <w>390</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;
-[Guard]</panel_attributes>
-    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>260</x>
-      <y>410</y>
-      <w>390</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;
-[else]</panel_attributes>
-    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>270</x>
-      <y>680</y>
-      <w>90</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>state</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>10</x>
-      <y>400</y>
-      <w>180</w>
-      <h>110</h>
-    </coordinates>
-    <panel_attributes>complex
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>290</y><w>390</w><h>40</h></coordinates><panel_attributes>lt=-&gt;
+Event</panel_attributes><additional_attributes>10;20;370;20</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>330</y><w>390</w><h>40</h></coordinates><panel_attributes>lt=-&gt;
+Event / Effect</panel_attributes><additional_attributes>10;20;370;20</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>370</y><w>390</w><h>40</h></coordinates><panel_attributes>lt=-&gt;
+[Guard]</panel_attributes><additional_attributes>10;20;370;20</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>410</y><w>390</w><h>40</h></coordinates><panel_attributes>lt=-&gt;
+[else]</panel_attributes><additional_attributes>10;20;370;20</additional_attributes></element><element><id>UMLState</id><coordinates><x>270</x><y>680</y><w>90</w><h>40</h></coordinates><panel_attributes>state</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>10</x><y>400</y><w>180</w><h>110</h></coordinates><panel_attributes>complex
 state
 --
 some more...
 
 -.
 valign=top
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
-      <x>270</x>
-      <y>510</y>
-      <w>290</w>
-      <h>150</h>
-    </coordinates>
-    <panel_attributes>*Protokoll-Zustandsautomat*
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>270</x><y>510</y><w>290</w><h>150</h></coordinates><panel_attributes>*Protokoll-Zustandsautomat*
 *hat nur Call-Events!*
 
 Welche *Operationen* eines Objekts
 werden in welcher *Reihenfolge*
 in welchem *Zustand*
 unter welchen *Vor- und Nachbedingungen*
-aufgerufen?</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
-      <x>240</x>
-      <y>50</y>
-      <w>210</w>
-      <h>120</h>
-    </coordinates>
-    <panel_attributes>*Verhaltens-Zustandsautomat*
+aufgerufen?</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>240</x><y>50</y><w>210</w><h>120</h></coordinates><panel_attributes>*Verhaltens-Zustandsautomat*
 *hat diverse Event-Typen!*
 
 Call
 Signal
 Change
 Time
-Any</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLSpecialState</id>
-    <coordinates>
-      <x>110</x>
-      <y>520</y>
-      <w>20</w>
-      <h>20</h>
-    </coordinates>
-    <panel_attributes>type=flow_final</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>80</x>
-      <y>520</y>
-      <w>20</w>
-      <h>20</h>
-    </coordinates>
-    <panel_attributes>fg=white
+Any</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>110</x><y>520</y><w>20</w><h>20</h></coordinates><panel_attributes>type=flow_final</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>520</y><w>20</w><h>20</h></coordinates><panel_attributes>fg=white
 customelement=
 drawCircle(20, 20,20) fg=black lt=- //fg= bg= lt= lw= //Parameters (x, y, width, height)
-//drawText("*C*",11,14,center) fg=black </panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
-      <x>40</x>
-      <y>10</y>
-      <w>150</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>*Startzustand*</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
-      <x>40</x>
-      <y>50</y>
-      <w>150</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>*Endzustand*</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
-      <x>40</x>
-      <y>90</y>
-      <w>150</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>*Terminator*</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
-      <x>110</x>
-      <y>140</y>
-      <w>70</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>*Zustand*</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
-      <x>60</x>
-      <y>200</y>
-      <w>110</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>*Entscheidung*</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLSpecialState</id>
-    <coordinates>
-      <x>20</x>
-      <y>250</y>
-      <w>20</w>
-      <h>20</h>
-    </coordinates>
-    <panel_attributes>type=initial</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
-      <x>60</x>
-      <y>250</y>
-      <w>110</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>*Kreuzung*</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Text</id>
-    <coordinates>
-      <x>270</x>
-      <y>200</y>
-      <w>110</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>*Transition*</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLFrame</id>
-    <coordinates>
-      <x>230</x>
-      <y>470</y>
-      <w>490</w>
-      <h>380</h>
-    </coordinates>
-    <panel_attributes>sm Bezeichner {protocol}</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLFrame</id>
-    <coordinates>
-      <x>230</x>
-      <y>10</y>
-      <w>490</w>
-      <h>450</h>
-    </coordinates>
-    <panel_attributes>sm Bezeichner
-layer=-1</panel_attributes>
-    <additional_attributes/>
-  </element>
-</diagram>
+//drawText("*C*",11,14,center) fg=black </panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>40</x><y>10</y><w>150</w><h>30</h></coordinates><panel_attributes>*Startzustand*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>40</x><y>50</y><w>150</w><h>30</h></coordinates><panel_attributes>*Endzustand*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>40</x><y>90</y><w>150</w><h>30</h></coordinates><panel_attributes>*Terminator*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>110</x><y>140</y><w>70</w><h>30</h></coordinates><panel_attributes>*Zustand*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>60</x><y>200</y><w>110</w><h>30</h></coordinates><panel_attributes>*Entscheidung*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>20</x><y>250</y><w>20</w><h>20</h></coordinates><panel_attributes>type=initial</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>60</x><y>250</y><w>110</w><h>30</h></coordinates><panel_attributes>*Kreuzung*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>270</x><y>200</y><w>110</w><h>30</h></coordinates><panel_attributes>*Transition*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>230</x><y>470</y><w>490</w><h>380</h></coordinates><panel_attributes>sm Bezeichner {protocol}</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>230</x><y>10</y><w>490</w><h>450</h></coordinates><panel_attributes>sm Bezeichner
+layer=-1</panel_attributes><additional_attributes></additional_attributes></element></diagram>
