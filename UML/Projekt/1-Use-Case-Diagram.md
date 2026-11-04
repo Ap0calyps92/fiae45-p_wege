@@ -36,7 +36,7 @@ eine Anwendung gestartet wird, prüft das Headset, ob für die Umgebung eine Beg
 vorhanden ist. Ist das nicht der Fall, schlägt das Headset passend zum freien Platz
 eine Begrenzung vor, die der Nutzer anpassen und bestätigen kann, bevor es weitergeht.
 Unabhängig davon kann der Nutzer die Begrenzung auch jederzeit selbst über die
-Einstellungen festlegen oder ändern.
+Schnelleinstellungen festlegen oder ändern.
 
 Bewusst nicht betrachtet werden die Inhalte der Anwendungen selbst, also Spiele und der
 Store, da sie nicht zur Bedienung des Geräts gehören.

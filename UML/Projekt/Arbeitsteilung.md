@@ -11,12 +11,12 @@
 | Aufgabe | Philipp Wege | Cem-Sultan Özagac | Kevin Konrad Sause |
 |---|---|---|---|
 | Recherche und Zusammenstellung der Anleitungen | x | x | x |
-| Use-Case-Diagramm | x | x | x |
-| Activity-Diagramm | x | x | x |
-| Class-Diagramm | x | x | x |
-| State-Diagramm | x | x | x |
-| Sequence-Diagramm | x | x | x |
-| Beschreibungstexte | x | x | x |
+| Use-Case-Diagramm | | | x |
+| Activity-Diagramm | x | x | |
+| Class-Diagramm | x | | |
+| State-Diagramm | x | x | |
+| Sequence-Diagramm | | x | x |
+| Beschreibungstexte | x | | x |
 | Projekt.md und Ordnerstruktur | x | x | x |
 | Korrekturlesen / Prüfung gegen die Anleitung | x | x | x |
 

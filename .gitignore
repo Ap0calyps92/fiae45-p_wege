@@ -2,4 +2,5 @@
 **/.env
 **/Thumbs.db
 **/.azuredatastudio
-**/.vscode.vs/
+**/.vscode/
+**/.vs/
